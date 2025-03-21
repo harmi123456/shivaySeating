@@ -1,0 +1,988 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    height: 60px;
+    border: 2px solid;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    background: white;
+    z-index: 1000;
+
+    .bars {
+        display: none;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    .close-icon {
+        font-size: 24px;
+        cursor: pointer;
+        display: none;
+    }
+
+    .logo {
+        width: 10%;
+        border: 1px solid;
+        height: 100%;
+    }
+
+    .navlinks {
+        display: flex;
+        gap: 20px;
+        font-size: 18px;
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+    }
+
+    .dropdown {
+        position: relative;
+        cursor: pointer;
+    }
+
+    .dropdown-toggle {
+        padding: 8px;
+    }
+
+    .dropdown-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background: white;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 4px;
+        display: flex;
+        flex-direction: column;
+        min-width: 150px;
+    }
+
+    .dropdown-menu a {
+        padding: 10px;
+        text-decoration: none;
+        color: black;
+        display: block;
+    }
+
+    .dropdown-menu a:hover {
+        background: lightgray;
+    }
+
+    .quote {
+        height: 50px;
+        border-radius: 10px;
+        padding: 10px;
+        text-align: center;
+        background-color: #9e1b32;
+        position: fixed;
+        right: 10px;
+        width: 10%;
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+    }
+}
+
+
+@media (max-width: 768px) {
+    header {
+        justify-content: center;
+
+        .bars {
+            display: block;
+            position: fixed;
+            left: 10px;
+        }
+
+        .navlinks {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 250px;
+            height: 100vh;
+            background: white;
+            flex-direction: column;
+            padding: 20px;
+            box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.2);
+            transform: translateX(-100%);
+            transition: transform 0.4s ease-in-out;
+            display: flex;
+            opacity: 0;
+        }
+
+        .navlinks.open {
+            transform: translateX(0);
+            opacity: 1;
+        }
+
+        .navlinks a {
+            padding: 15px 0;
+            display: block;
+            font-size: 18px;
+        }
+
+        .close-icon {
+            display: block;
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            cursor: pointer;
+        }
+
+        .quote {
+            width: 20%;
+        }
+    }
+}
+
+
+@media (max-width: 480px) {
+    header {
+        .quote {
+            width: 30%;
+        }
+    }
+}
+
+
+
+.sec1 {
+    height: 500px;
+    border: 2px solid red;
+    margin-top: 60px;
+}
+
+/* //sec2 */
+
+.sec2 {
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    .shop {
+        width: 25%;
+        height: 80%;
+        font-family: 'Poppins';
+
+        .red_line {
+            width: 25%;
+            height: 3px;
+            background-color: #9e1b32;
+        }
+
+        p {
+            color: grey;
+        }
+
+        a {
+            color: black;
+            text-decoration: none;
+        }
+
+        .black_line {
+            height: 2px;
+            background: black;
+            width: 47%;
+
+        }
+    }
+
+    .shop:hover a {
+        letter-spacing: 2px;
+        transition: 1s;
+        color: #9e1b32;
+    }
+
+    .shop:hover .black_line {
+        width: 55%;
+        transition: 1s;
+    }
+
+
+    /* //slider */
+    .category {
+        width: 70%;
+        display: flex;
+        align-items: center;
+        position: relative;
+        margin: 10px;
+    }
+
+    .scroll-container {
+        display: flex;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+        white-space: nowrap;
+        padding: 10px;
+        gap: 10px;
+        /* width: 950px;  */
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .scroll-container::-webkit-scrollbar {
+        display: none;
+    }
+
+    .slide-box {
+        min-width: 300px;
+        height: 250px;
+        color: black;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        border-radius: 10px;
+        transition: 1s;
+        flex-shrink: 0;
+
+        img {
+            height: 80%;
+        }
+    }
+
+    .slide-box:hover img {
+        transform: scale(1.1);
+        /* transition: 1s; */
+    }
+
+    .slide-box:hover h3 {
+        color: #9e1b32;
+        z-index: 100;
+        font-size: 25px;
+        transition: 1s;
+    }
+
+    /* Navigation Buttons */
+    .prev-btn,
+    .next-btn {
+        background: rgba(0, 0, 0, 0.6);
+        color: white;
+        border: none;
+        cursor: pointer;
+        padding: 10px 15px;
+        font-size: 20px;
+        position: absolute;
+        z-index: 1;
+    }
+
+    .prev-btn {
+        left: 0;
+    }
+
+    .next-btn {
+        right: 0;
+    }
+
+    .prev-btn:hover,
+    .next-btn:hover {
+        background: rgba(0, 0, 0, 0.8);
+    }
+
+
+}
+
+@media (max-width: 768px) {
+    .sec2 {
+        height: auto;
+        overflow: hidden;
+
+        .shop {
+            width: 100%;
+        }
+
+        .category {
+            width: 100%;
+        }
+    }
+}
+
+
+
+
+
+/* //sec3 */
+.sec3 {
+    height: auto;
+
+    .first {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+
+        .hot {
+            width: 25%;
+            font-family: 'Poppins';
+
+            .red_line {
+                width: 25%;
+                height: 3px;
+                background-color: #9e1b32;
+            }
+        }
+
+        .filter {
+            display: flex;
+            width: 40%;
+            align-items: center;
+            justify-content: space-evenly;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+
+        .all {
+            width: 15%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid;
+            color: black;
+            text-decoration: none;
+
+        }
+
+        .all:hover {
+            background-color: #9e1b32;
+            transition: 1s;
+        }
+
+        .all:hover h6 {
+            letter-spacing: 2px;
+            transition: 1s;
+            color: white;
+        }
+
+    }
+
+    .second {
+        height: auto;
+        padding: 20px;
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .chair-card {
+            height: 300px;
+            width: 280px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            text-decoration: none;
+            color: black;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.3s ease-in-out;
+            padding: 10px;
+
+            img {
+                height: 80%;
+            }
+
+            .chervon_right {
+                position: absolute;
+                top: 55%;
+                right: -40px;
+                width: 40px;
+                height: 40px;
+                background: #9e1b32;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                /* border-radius: 50%; */
+                transition: right 0.3s ease-in-out;
+                visibility: hidden;
+                opacity: 0;
+            }
+
+            .chervon_right i {
+                color: white;
+                font-size: 18px;
+            }
+
+        }
+
+        .chair-card:hover .chervon_right {
+            right: 10px;
+            /* Moves in from the right */
+            visibility: visible;
+            opacity: 1;
+        }
+
+
+        .chair-card:hover img {
+            transform: scale(1.1);
+            transition: 1s;
+        }
+
+        .chair-card:hover h5 {
+            color: #9e1b32;
+            z-index: 100;
+            font-size: 18px;
+            transition: 1s;
+        }
+
+    }
+}
+
+
+@media (max-width: 768px) {
+    .sec3 {
+        .first {
+            .hot {
+                width: 100%;
+            }
+
+            .filter {
+                width: 100%;
+                margin: 10px;
+            }
+
+            .all {
+                width: 30%;
+                margin-left: 450px;
+                height: 40px;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 556px) {
+    .sec3 {
+        .first {
+            .all {
+                width: 30%;
+                margin-left: 350px;
+                height: 40px;
+            }
+        }
+    }
+}
+
+
+
+@media (max-width: 480px) {
+    .sec3 {
+        .first {
+
+            .all {
+                width: 30%;
+                margin-left: 250px;
+                height: 40px;
+            }
+        }
+    }
+}
+
+
+
+
+@media (max-width: 380px) {
+    .sec3 {
+        .first {
+            .filter {
+                p {
+                    margin: 5px;
+                }
+            }
+
+            .all {
+                width: 40%;
+                margin-left: 180px;
+                height: 40px;
+            }
+        }
+    }
+}
+
+
+
+/* //sec4 */
+
+.sec4 {
+    height: 500px;
+    background: url("https://w0.peakpx.com/wallpaper/548/427/HD-wallpaper-modern-design-architecture-house-interior-home-design-sofa.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+
+/* //sec5 */
+
+.sec5 {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+
+    .chair {
+        width: 50%;
+
+        .up-down {
+            animation: up-down linear 4s;
+            animation-iteration-count: infinite;
+            transform-origin: 50% 50%;
+            -webkit-animation: up-down linear 4s;
+            -webkit-animation-iteration-count: infinite;
+            -webkit-transform-origin: 50% 50%;
+            -moz-animation: up-down linear 4s;
+            -moz-animation-iteration-count: infinite;
+            -moz-transform-origin: 50% 50%;
+            -o-animation: up-down linear 4s;
+            -o-animation-iteration-count: infinite;
+            -o-transform-origin: 50% 50%;
+            -ms-animation: up-down linear 4s;
+            -ms-animation-iteration-count: infinite;
+            -ms-transform-origin: 50% 50%;
+        }
+
+        img {
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    .content {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-family: "Poppins";
+        padding: 10px;
+
+        p {
+            color: grey;
+        }
+
+        h1 {
+            color: #9e1b32;
+        }
+
+        .split-text span {
+            opacity: 0;
+            transform: translateY(20px);
+            display: inline-block;
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+
+        .split-text span.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+
+
+    }
+}
+
+
+/* //split text */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+.up-down {
+    animation: up-down linear 4s;
+    animation-iteration-count: infinite;
+    transform-origin: 50% 50%;
+    -webkit-animation: up-down linear 4s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-transform-origin: 50% 50%;
+    -moz-animation: up-down linear 4s;
+    -moz-animation-iteration-count: infinite;
+    -moz-transform-origin: 50% 50%;
+    -o-animation: up-down linear 4s;
+    -o-animation-iteration-count: infinite;
+    -o-transform-origin: 50% 50%;
+    -ms-animation: up-down linear 4s;
+    -ms-animation-iteration-count: infinite;
+    -ms-transform-origin: 50% 50%;
+}
+
+@keyframes up-down {
+    0% {
+        transform: translate(1px, 20px);
+    }
+
+    24% {
+        transform: translate(1px, 30px);
+    }
+
+    50% {
+        transform: translate(1px, 12px);
+    }
+
+    74% {
+        transform: translate(1px, 22px);
+    }
+
+    100% {
+        transform: translate(1px, 22px);
+    }
+}
+
+@-moz-keyframes up-down {
+    0% {
+        -moz-transform: translate(1px, 20px);
+    }
+
+    24% {
+        -moz-transform: translate(1px, 30px);
+    }
+
+    50% {
+        -moz-transform: translate(1px, 12px);
+    }
+
+    74% {
+        -moz-transform: translate(1px, 22px);
+    }
+
+    100% {
+        -moz-transform: translate(1px, 22px);
+    }
+}
+
+@-webkit-keyframes up-down {
+    0% {
+        -webkit-transform: translate(1px, 20px);
+    }
+
+    24% {
+        -webkit-transform: translate(1px, 30px);
+    }
+
+    50% {
+        -webkit-transform: translate(1px, 12px);
+    }
+
+    74% {
+        -webkit-transform: translate(1px, 22px);
+    }
+
+    100% {
+        -webkit-transform: translate(1px, 22px);
+    }
+}
+
+@-o-keyframes up-down {
+    0% {
+        -o-transform: translate(1px, 20px);
+    }
+
+    24% {
+        -o-transform: translate(1px, 30px);
+    }
+
+    50% {
+        -o-transform: translate(1px, 12px);
+    }
+
+    74% {
+        -o-transform: translate(1px, 22px);
+    }
+
+    100% {
+        -o-transform: translate(1px, 22px);
+    }
+}
+
+@-ms-keyframes up-down {
+    0% {
+        -ms-transform: translate(1px, 20px);
+    }
+
+    24% {
+        -ms-transform: translate(1px, 30px);
+    }
+
+    50% {
+        -ms-transform: translate(1px, 12px);
+    }
+
+    74% {
+        -ms-transform: translate(1px, 22px);
+    }
+
+    100% {
+        -ms-transform: translate(1px, 22px);
+    }
+}
+
+
+
+@media (max-width: 556px) {
+    .sec5 {
+        .chair {
+            width: 100%;
+        }
+
+        .content {
+            width: 100%;
+
+            p {
+                z-index: 100;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+/* //sec6 */
+
+.sec6 {
+    height: 600px;
+    background: linear-gradient(rgba(0, 0, 0, 0.379), rgba(0, 0, 0, 0.237)), url("https://png.pngtree.com/thumb_back/fh260/background/20230704/pngtree-minimalistic-white-chair-adorns-neutral-interior-captured-in-3d-rendering-image_3718305.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+
+    .stories {
+        width: 700px;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        font-family: 'Poppins';
+        padding: 20px;
+
+        .red_line {
+            width: 25%;
+            height: 3px;
+            background-color: #9e1b32;
+        }
+
+        .about {
+            height: 50px;
+            width: 150px;
+            background-color: #9e1b32;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+
+            a {
+                color: white;
+                text-align: center;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+
+/* //sec7 */
+
+.sec7 {
+    .heading {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+            font-size: 30px;
+            text-align: center;
+            font-family: 'Poppins';
+        }
+
+        .red_line {
+            width: 15%;
+            height: 3px;
+            background-color: #9e1b32;
+        }
+
+    }
+
+
+
+    .testimonial-container {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        width: 100%;
+    }
+
+    .marquee {
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        margin: 10px;
+    }
+
+    .marquee-content {
+        display: flex;
+        min-width: 200%;
+        gap: 10px;
+        animation: scroll-ltr 30s linear infinite;
+    }
+
+    .marquee-rtl .marquee-content {
+        animation: scroll-rtl 30s linear infinite;
+    }
+
+    .testimonial-box {
+        min-width: 250px;
+        padding: 10px;
+        background: #f0f0f0;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+}
+
+@keyframes scroll-ltr {
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes scroll-rtl {
+    from {
+        transform: translateX(-50%);
+    }
+
+    to {
+        transform: translateX(0%);
+    }
+}
+
+
+
+/* //sec8 */
+
+.sec8 {
+    height: auto;
+
+    .heading {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+            font-size: 30px;
+            text-align: center;
+            font-family: 'Poppins';
+        }
+
+        .red_line {
+            width: 15%;
+            height: 3px;
+            background-color: #9e1b32;
+        }
+
+    }
+
+    .instagram {
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+
+        .link_insta {
+            position: relative;
+            overflow: hidden;
+            width: 20%;
+            height: 100%;
+
+            img {
+                height: 100%;
+                width: 100%;
+                display: block;
+                transition: filter 0.3s ease-in-out;
+            }
+        }
+
+        .link_insta:hover img {
+            filter: brightness(30%);
+        }
+
+        /* Instagram logo in the center */
+        .link_insta::after {
+            content: "\f16d";
+            /* FontAwesome Instagram icon */
+            font-family: "Font Awesome 5 Brands";
+            font-size: 30px;
+            color: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        .link_insta:hover::after {
+            opacity: 1;
+        }
+
+    }
+
+}
+
+
+@media (max-width: 768px) {
+    .sec8 {
+        height: auto;
+        .instagram {
+            .link_insta {
+                width: 50%;
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .sec8 {
+        height: auto;
+        .instagram {
+            .link_insta {
+                width: 100%;
+            }
+        }
+    }
+}
+
+
+
