@@ -13,6 +13,7 @@ import ExecutiveSeries from './components/ExecutiveSeries';
 import PremiumSeries from './components/PremiumSeries';
 import VisitorSeries from './components/VisitorSeries';
 import ChairDetails from './components/ChairDetails';
+import Liked_products from './components/Liked_products';
 
 export default function App() {
   return (
@@ -33,6 +34,7 @@ export default function App() {
           <Route path='/PremiumSeries' element={<PremiumSeries />}></Route>
           <Route path='/VisitorSeries' element={<VisitorSeries />}></Route>
           <Route path="/chair/:id" element={<ChairDetails />} />
+          <Route path='/liked-products' element={<Liked_products />} ></Route>
         </Routes>
 
       </Router>

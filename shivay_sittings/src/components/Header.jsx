@@ -1,10 +1,17 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 export default function Header() {
 
     const [dropdownOpen, setDropdownOpen] = useState(false);
     const [menuOpen, setMenuOpen] = useState(false);
+
+
+    const navigate = useNavigate();
+
+    const handleLikeClick = () => {
+        navigate("/liked-products");  // Redirect to liked products page
+    };
 
     return (
         <div>
@@ -15,9 +22,10 @@ export default function Header() {
                     <i className="fa-solid fa-bars-staggered"></i>
                 </div>
 
-                <div className="logo">
+                <div className="logo1">
                     <img src="/img/logo3.png" alt="" />
                 </div>
+
 
                 <div className={`navlinks ${menuOpen ? "open" : ""}`}>
 
@@ -43,13 +51,17 @@ export default function Header() {
 
                     </div>
 
+                    <div className="logo">
+                        <img src="/img/logo3.png" alt="" />
+                    </div>
+
                     <Link to='/artOfSitting'>Art Of Sittings</Link>
                     <Link to='/contactUs'>Contact Us</Link>
 
                 </div>
 
-                <div className="quote">
-                    <Link to='/contactUs'>Get A Quote</Link>
+                <div className="like-icon" onClick={handleLikeClick}>
+                    <i className="fa-regular fa-heart"></i>
                 </div>
 
             </header>

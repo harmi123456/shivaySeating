@@ -100,13 +100,163 @@ export default function About() {
                     <p>{step.desc}</p>
                     <img src={step.img} alt={step.title} />
                   </div>
-                  
+
                 </div>
               ))}
             </div>
           </div>
         </section>
 
+
+      </div>
+
+
+
+      {/* //sec4 */}
+
+      <div className="container-fluid about_sec4">
+
+        <section className="production-house container my-5">
+
+          <div className="text-center mb-5">
+            <h2 className="section-title">Inside Our Production House</h2>
+            <p className="section-subtitle">
+              Where Innovation Meets Craftsmanship – Delivering quality, precision, and durability.
+            </p>
+          </div>
+
+          {/* Manufacturing Process */}
+          <div className="row align-items-center">
+            {/* Image */}
+            <div className="col-md-6">
+              <img
+                src="https://img.freepik.com/free-photo/industrial-factory-with-workers-production-line_23-2148851951.jpg"
+                alt="Production House"
+                className="img-fluid rounded shadow-lg"
+              />
+            </div>
+
+            {/* Steps */}
+
+            <div className="steps-container">
+              {/* Step 1 */}
+              <div className="step-box">
+                <div className="step-circle">1</div>
+                <div className="step-content">
+                  <h4 className="step-title">Premium Materials Selection</h4>
+                  <p className="step-desc">Using high-quality wood, foam, and fabrics.</p>
+                </div>
+              </div>
+
+              {/* Step 2 */}
+              <div className="step-box">
+                <div className="step-circle">2</div>
+                <div className="step-content">
+                  <h4 className="step-title">Skilled Craftsmanship</h4>
+                  <p className="step-desc">Our artisans ensure perfection in every design.</p>
+                </div>
+              </div>
+
+              {/* Step 3 */}
+              <div className="step-box">
+                <div className="step-circle">3</div>
+                <div className="step-content">
+                  <h4 className="step-title">Advanced Machinery</h4>
+                  <p className="step-desc">Cutting-edge machines for precision and durability.</p>
+                </div>
+              </div>
+
+              {/* Step 4 */}
+              <div className="step-box">
+                <div className="step-circle">4</div>
+                <div className="step-content">
+                  <h4 className="step-title">Strict Quality Checks</h4>
+                  <p className="step-desc">Every product is tested for durability and comfort.</p>
+                </div>
+              </div>
+            </div>
+
+
+
+          </div>
+
+          {/* Video & Sustainability */}
+          <div className="row align-items-center mt-5">
+            <div className="col-md-6">
+              <h3 className="sub-title">Behind the Scenes</h3>
+              <p className="sub-desc">
+                Take a look at how we create top-quality chairs and sofas in our production house.
+              </p>
+              <video className="w-100 rounded shadow-lg mt-3" controls>
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+
+            <div className="col-md-6">
+              <div className="info-box p-4">
+                <h3 className="sub-title">Sustainability & Responsibility</h3>
+                <p className="sub-desc">
+                  We are committed to eco-friendly practices by using sustainable materials and responsible waste management.
+                </p>
+                <ul className="list-unstyled mt-3">
+                  <li>♻️ Recycling & Waste Management</li>
+                  <li>🌱 Sustainable Material Sourcing</li>
+                  <li>🔬 Eco-Friendly Production Processes</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </section>
+
+      </div>
+
+
+      {/* //sec5 */}
+
+      <div className="container-fluid about_sec5">
+
+        <div className="mission-wrapper">
+          {/* Background Blobs */}
+          <div className="blob-container">
+            <div className="blob one"></div>
+            <div className="blob two"></div>
+            <div className="blob three"></div>
+          </div>
+
+          <h2 className="mission-title">WE DESIGN FURNITURE</h2>
+
+          <div className="mission-cards">
+            <div className="mission-box">
+              <h3 className="mission-heading">Our Mission</h3>
+              <p className="mission-desc">
+                Research and innovate to introduce ergonomic, stylish, and comfortable furniture solutions.
+              </p>
+            </div>
+
+            <div className="mission-box">
+              <h3 className="mission-heading">Innovation & Design</h3>
+              <p className="mission-desc">
+                Address sitting posture problems and create adaptable furniture solutions.
+              </p>
+            </div>
+
+            <div className="mission-box">
+              <h3 className="mission-heading">Eco-Friendly Approach</h3>
+              <p className="mission-desc">
+                We ensure sustainability by using environmentally friendly materials and processes.
+              </p>
+            </div>
+
+            <div className="mission-box">
+              <h3 className="mission-heading">Customer Satisfaction</h3>
+              <p className="mission-desc">
+                Craft furniture with precision and care, delivering unparalleled comfort and durability.
+              </p>
+            </div>
+          </div>
+        </div>
 
       </div>
 
