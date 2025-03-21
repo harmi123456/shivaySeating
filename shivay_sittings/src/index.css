@@ -5,8 +5,7 @@
 }
 
 header {
-    height: 60px;
-    border: 2px solid;
+    height: 70px;
     display: flex;
     width: 100%;
     align-items: center;
@@ -28,13 +27,14 @@ header {
     }
 
     .logo {
-        width: 5%;
-        border: 1px solid;
+        width: 100px;
+        /* border: 1px solid; */
         height: 100%;
         padding: 10px;
         margin: 10px;
         margin-left: 50px;
-        img{
+
+        img {
             height: 100%;
             width: 100%;
         }
@@ -109,6 +109,11 @@ header {
             display: block;
             position: fixed;
             left: 10px;
+        }
+
+        .logo {
+            position: relative;
+            left: -40px;
         }
 
         .navlinks {
@@ -567,7 +572,10 @@ header {
             height: 100%;
             width: 100%;
         }
+
+       
     }
+
 
     .content {
         width: 50%;
@@ -598,9 +606,67 @@ header {
         }
 
 
+        .color-options {
+            display: flex;
+            gap: 10px;
+            position: relative;
+            top: 150px;
+        }
+
+        .color-btn {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: none;
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .color-btn:hover {
+            transform: scale(1.1);
+        }
+
 
     }
+
 }
+
+
+@media (max-width: 768px) {
+    .sec5{
+        .content{
+            .color-options{
+                top: 50px;
+                left: -300px;
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .sec5{
+        .content{
+            margin-top: 50px;
+            .color-options{
+                top: -280px;
+                left: 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 380px) {
+    .sec5{
+        .content{
+            .color-options{
+                top: -350px;
+                left: 0;
+            }
+        }
+    }
+}
+
+
 
 
 /* //split text */
@@ -1049,4 +1115,217 @@ header {
         color: white;
     }
 
+}
+
+
+.about_sec2 {
+    background: #f8f9fa;
+    padding: 20px;
+
+    h1 {
+        color: #cc3301;
+        font-family: 'Poppins';
+    }
+
+    .choose {
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 40px 20px;
+        border-radius: 10px;
+    }
+
+    .special {
+        background: white;
+        height: auto;
+        width: 300px;
+        border-radius: 10px;
+        padding: 20px;
+        text-align: center;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .special:hover {
+        transform: translateY(-8px);
+        box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .special img {
+        height: 80px;
+        width: auto;
+        margin-bottom: 10px;
+    }
+
+    .special h3 {
+        font-size: 18px;
+        font-weight: bold;
+        color: #333;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+        .choose {
+            flex-direction: column;
+        }
+
+        .special {
+            width: 90%;
+            height: auto;
+            padding: 15px;
+        }
+    }
+
+
+}
+
+
+
+.about_sec3 {
+    height: 500px;
+    border: 1px solid;
+    background: url('https://img.freepik.com/free-photo/empty-modern-room-with-furniture_23-2149178345.jpg');
+    background-size: cover;
+    background-position: center;
+
+    .craftsmanship {
+        padding: 60px 20px;
+        text-align: center;
+    }
+
+    .section-title {
+        font-size: 28px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        color: #cc3301;
+        font-family: 'Poppins';
+    }
+
+    .section-subtitle {
+        font-size: 18px;
+        color: #f0f0f0;
+        margin-bottom: 40px;
+    }
+
+    /* Progress Container */
+    .progress-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin-top: 40px;
+        gap: 40px;
+        /* Space between steps */
+    }
+
+    .progress-step {
+        width: 120px;
+        text-align: center;
+        position: relative;
+        transition: all 0.4s ease-in-out;
+        filter: blur(3px);
+    }
+
+    .progress-step.active {
+        filter: blur(0px);
+        /* Remove blur for active step */
+        transform: scale(1.1);
+        /* Highlight the active step */
+    }
+
+    .progress-step:hover {
+        filter: blur(0px);
+        transform: scale(1.1);
+    }
+
+    /* Step Circle */
+    .circle {
+        width: 50px;
+        height: 50px;
+        background: #ccc;
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
+    }
+
+    .progress-step.active .circle,
+    .progress-step:hover .circle {
+        background: #cc3301;
+        box-shadow: 0 0 15px rgba(204, 51, 1, 0.7);
+        transform: scale(1.2);
+    }
+
+    /* Step Content */
+    .step-content {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: all 0.5s ease-in-out;
+        position: absolute;
+        top: 80px;
+        width: 250px;
+        background: white;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .progress-step.active .step-content,
+    .progress-step:hover .step-content {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .step-content img {
+        width: 100%;
+        border-radius: 8px;
+        margin-top: 10px;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+        .progress-container {
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            height: auto;
+            gap: 60px;
+            /* Adjust gap for mobile */
+        }
+
+        .progress-step {
+            width: auto;
+            margin-bottom: 50px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .circle {
+            width: 35px;
+            height: 35px;
+            font-size: 16px;
+        }
+        .step-content {
+            top: -10px;
+            left: 45px;
+            width: 200px;
+            padding: 10px;
+        }
+    }
+
+
+}
+
+@media (max-width: 768px) {
+    .about_sec3{
+        height: 1000px;
+    }
 }

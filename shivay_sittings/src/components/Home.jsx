@@ -84,6 +84,19 @@ export default function Home() {
 
   const duplicatedTestimonials = [...testimonials, ...testimonials]; // Duplicate to ensure smooth loop
 
+  // change chair 
+
+  const [selectedColor, setSelectedColor] = useState("/img/chair1.png");
+
+  const chairColors = [
+    { color: "#7f9eb0", img: "/img/chair2.jpg" },
+    { color: "#995e18", img: "/img/chair4.jpg" },
+    { color: "#1e7998", img: "/img/chair1.png" },
+    { color: "#afaeb0", img: "/img/chair3.jpg" },
+
+  ];
+
+
   return (
     <div>
 
@@ -238,33 +251,31 @@ export default function Home() {
 
       <div className="container-fluid sec4"></div>
 
+
       {/* //sec5 */}
 
-      <div className=" container-fluid sec5">
+      <div className="container-fluid sec5">
 
         <div className="chair">
-          <img className='up-down' src="/img/chair1.png" alt="Ranger HB Revolving Chair" />
+          <img className="up-down fade-in" src={selectedColor} alt="Chair" />
         </div>
 
         <div className="content">
           <p><b>DESIGNED 2025</b></p>
+          <h1 className="split-text">Ranger HB Revolving Chair</h1>
+          <p>Synchro mechanism with multi-position locking arrangement. Class-4 gas lift for seat height adjustment and wheel filled nylon castors for smooth movement of the chair. Warranty: 3-year warranty covered on castors, base, gas-lift & Mechanism.</p>
 
-          <h1 className="split-text" key={key}>
-            {text.split('').map((char, index) => (
-              <span
+          <div className="color-options">
+            {chairColors.map((item, index) => (
+              <button
                 key={index}
-                style={{
-                  animation: `fadeIn 0.5s ease ${index * 100}ms forwards`,
-                }}
-              >
-                {char === ' ' ? '\u00A0' : char}
-              </span>
+                className="color-btn"
+                style={{ backgroundColor: item.color }}
+                onClick={() => setSelectedColor(item.img)}
+              ></button>
             ))}
-          </h1>
-
-          <p>Synchro mechanism with multi-position locking arrangement. Class-4 gas lift for seat height adjustment and wheel filled nylon castors for smooth movement of the chair. Warranty : 3 year warranty covered on castors, base, gas-lift a Mechanism.  </p>
+          </div>
         </div>
-
 
       </div>
 
