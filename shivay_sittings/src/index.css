@@ -28,9 +28,16 @@ header {
     }
 
     .logo {
-        width: 10%;
+        width: 5%;
         border: 1px solid;
         height: 100%;
+        padding: 10px;
+        margin: 10px;
+        margin-left: 50px;
+        img{
+            height: 100%;
+            width: 100%;
+        }
     }
 
     .navlinks {
@@ -965,6 +972,7 @@ header {
 @media (max-width: 768px) {
     .sec8 {
         height: auto;
+
         .instagram {
             .link_insta {
                 width: 50%;
@@ -976,6 +984,7 @@ header {
 @media (max-width: 480px) {
     .sec8 {
         height: auto;
+
         .instagram {
             .link_insta {
                 width: 100%;
@@ -986,3 +995,58 @@ header {
 
 
 
+
+
+
+
+
+
+
+
+/* //about page css */
+
+
+
+.about_sec1 {
+    height: 500px;
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://m.media-amazon.com/images/I/81gsB8dnfHL._AC_UF894,1000_QL80_.jpg") no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+
+    .hero-content {
+        position: relative;
+        z-index: 2;
+        text-align: center;
+    }
+
+    .hero-title {
+        font-size: 3rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+
+    .hero-subtitle {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+    }
+
+    .hero-btn {
+        font-size: 1.2rem;
+        font-weight: bold;
+        padding: 10px 20px;
+        border-radius: 5px;
+        background-color: #bc143f;
+        transition: 0.3s ease-in-out;
+        color: white;
+    }
+
+    .hero-btn:hover {
+        background-color: #a1143d;
+        color: white;
+    }
+
+}

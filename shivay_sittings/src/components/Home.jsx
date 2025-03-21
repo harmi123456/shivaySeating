@@ -5,7 +5,6 @@ import { chairsData } from './chairData';
 import Header from './Header';
 import Footer from './Footer';
 
-
 const testimonials = [
 
   { id: 1, text: "Great service!", author: "Alice" },

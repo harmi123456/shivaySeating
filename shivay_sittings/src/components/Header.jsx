@@ -15,7 +15,9 @@ export default function Header() {
                     <i className="fa-solid fa-bars-staggered"></i>
                 </div>
 
-                <div className="logo"></div>
+                <div className="logo">
+                    <img src="/img/logo3.png" alt="" />
+                </div>
 
                 <div className={`navlinks ${menuOpen ? "open" : ""}`}>
 
