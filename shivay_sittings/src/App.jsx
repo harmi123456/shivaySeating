@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Home from './components/Home';
 import About from './components/About';
 import Chairs from './components/Chairs';
@@ -17,23 +17,25 @@ import ChairDetails from './components/ChairDetails';
 export default function App() {
   return (
     <div>
-      <BrowserRouter>
+      <Router>
+
         <Routes>
-          <Route path='/' element={<Home/>} ></Route>
-          <Route path='/aboutUs' element={<About/>}></Route>
-          <Route path='/chairs' element={<Chairs/>}></Route>
-          <Route path='/sofas' element={<Sofas/>}></Route>
-          <Route path='/artOfSitting' element={<ArtOfSitting/>}></Route>
-          <Route path='/contactUs' element={<Contact/>}></Route>
-          <Route path='/shop' element={<Shop/>}></Route>
-          <Route path='/AirSeries' element={<AirSeries/>}></Route>
-          <Route path='/BarStool' element={<BarStool/>}></Route>
-          <Route path='/ExecutiveSeries' element={<ExecutiveSeries/>}></Route>
-          <Route path='/PremiumSeries' element={<PremiumSeries/>}></Route>
-          <Route path='/VisitorSeries' element={<VisitorSeries/>}></Route>
-          <Route path="/chair/:id" element={<ChairDetails/>} />
+          <Route path='/' element={<Home />} ></Route>
+          <Route path='/aboutUs' element={<About />}></Route>
+          <Route path='/chairs' element={<Chairs />}></Route>
+          <Route path='/sofas' element={<Sofas />}></Route>
+          <Route path='/artOfSitting' element={<ArtOfSitting />}></Route>
+          <Route path='/contactUs' element={<Contact />}></Route>
+          <Route path='/shop' element={<Shop />}></Route>
+          <Route path='/AirSeries' element={<AirSeries />}></Route>
+          <Route path='/BarStool' element={<BarStool />}></Route>
+          <Route path='/ExecutiveSeries' element={<ExecutiveSeries />}></Route>
+          <Route path='/PremiumSeries' element={<PremiumSeries />}></Route>
+          <Route path='/VisitorSeries' element={<VisitorSeries />}></Route>
+          <Route path="/chair/:id" element={<ChairDetails />} />
         </Routes>
-      </BrowserRouter>
+
+      </Router>
     </div>
   )
 }
