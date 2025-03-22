@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom';
 import Header from './Header'
 import Footer from './Footer'
 
 const steps = [
-  { id: 1, title: "Wood Cutting & Framing", desc: "We use high-quality wood to create a durable and sturdy frame.", img: "/img/woodwork.jpg" },
-  { id: 2, title: "Cushioning & Padding", desc: "Premium foam and padding are used for ultimate comfort.", img: "/img/cushioning.jpg" },
-  { id: 3, title: "Upholstery & Stitching", desc: "High-quality fabrics and skilled stitching bring elegance.", img: "/img/upholstery.jpg" },
-  { id: 4, title: "Finishing & Quality Check", desc: "Each piece undergoes strict quality checks before delivery.", img: "/img/finishing.jpg" },
+  { id: 1, title: "Wood Cutting & Framing", desc: "We use high-quality wood to create a durable and sturdy frame.", img: "/img/wood.jpg" },
+  { id: 2, title: "Cushioning & Padding", desc: "Premium foam and padding are used for ultimate comfort.", img: "/img/cusion.jpg" },
+  { id: 3, title: "Upholstery & Stitching", desc: "High-quality fabrics and skilled stitching bring elegance.", img: "/img/stitch.jpg" },
+  { id: 4, title: "Finishing & Quality Check", desc: "Each piece undergoes strict quality checks before delivery.", img: "/img/quality.jpeg" },
 ];
 
 
@@ -36,9 +37,11 @@ export default function About() {
           <p className="hero-subtitle">
             The Best Sofa & Chair Manufacturer in Morbi – Quality, Craftsmanship, & Innovation.
           </p>
-          <a href="/shop">
+
+          <Link to='/shop'>
             <button className="btn hero-btn">Explore Our Collection</button>
-          </a>
+          </Link>
+          
         </div>
 
       </div>
@@ -128,11 +131,11 @@ export default function About() {
           {/* Manufacturing Process */}
           <div className="row align-items-center">
             {/* Image */}
-            <div className="col-md-6">
+            <div className="col-md-6 fabric_img">
               <img
-                src="https://img.freepik.com/free-photo/industrial-factory-with-workers-production-line_23-2148851951.jpg"
+                src="/img/fabric2.jpg"
                 alt="Production House"
-                className="img-fluid rounded shadow-lg"
+                className="img-fluid rounded"
               />
             </div>
 
@@ -263,6 +266,7 @@ export default function About() {
 
 
       <Footer />
+      
     </div>
   )
 }

@@ -5,6 +5,32 @@ import { chairsData } from './chairData';
 import Header from './Header';
 import Footer from './Footer';
 
+
+//slider
+
+const slides = [
+  {
+    image: "/img/cafe_chair1.jpeg",
+    date: "26 December 2013",
+    title: "Premium Café Chair – Modern & Stylish",
+    description: "Ergonomically designed café chair with a sleek and comfortable finish. Perfect for coffee shops, restaurants, and home dining spaces. Durable, lightweight, and stylish."
+  },
+  {
+    image: "/img/corpo_chair1.jpeg",
+    date: "15 August 2024",
+    title: "Corporate Office Chair – Ergonomic & Executive",
+    description: "High-back corporate office chair with lumbar support and breathable mesh. Ideal for long working hours, ensuring comfort and productivity in office environments."
+  },
+  {
+    image: "/img/executive3.jpeg",
+    date: "10 March 2023",
+    title: "Luxury Executive Chair – Leather & Adjustable",
+    description: "Premium executive chair crafted with high-quality leather, 360° swivel, and height-adjustable features. A perfect blend of style and comfort for business professionals."
+  }
+];
+
+
+//client satisfaction
 const testimonials = [
 
   { id: 1, text: "Great service!", author: "Alice" },
@@ -97,13 +123,71 @@ export default function Home() {
   ];
 
 
+  //like products
+
+
+  const [likedProducts, setLikedProducts] = useState(() => {
+    return JSON.parse(localStorage.getItem("likedProducts")) || [];
+  });
+
+  const handleLike = (e, chair) => {
+    e.preventDefault(); // Prevents navigation when clicking the heart icon
+
+    setLikedProducts((prev) => {
+      const updatedLikes = [...prev, chair];
+      localStorage.setItem("likedProducts", JSON.stringify(updatedLikes)); // Update localStorage
+      return updatedLikes; // Update state
+    });
+  };
+
+
+  //sec1 slider
+
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  // Auto-slide effect
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveIndex((prevIndex) => (prevIndex + 1) % slides.length);
+    }, 3000);
+    return () => clearInterval(interval); // Cleanup on unmount
+  }, []);
+
+
+
   return (
+
     <div>
 
       {/* //header */}
       <Header />
 
-      <div className="container-fluid sec1"></div>
+      <div className="container-fluid sec1">
+
+        <div className="slider-container">
+          {/* Image Container */}
+          <div className="image-container">
+            {slides.map((slide, i) => (
+              <img
+                key={i}
+                src={slide.image}
+                alt="slide"
+                className={`slide-image ${i === activeIndex ? "active" : ""}`}
+              />
+            ))}
+          </div>
+
+          {/* Content Container */}
+          <div className="content-container" key={activeIndex}>
+            <p className="date">{slides[activeIndex].date}</p>
+            <h2 className="title">{slides[activeIndex].title}</h2>
+            <p className="description">{slides[activeIndex].description}</p>
+          </div>
+
+        </div>
+
+
+      </div>
 
 
       {/* //sec2 */}
@@ -234,9 +318,15 @@ export default function Home() {
               <h5>{chair.name}</h5>
               {/* <p>{chair.price}</p> */}
 
-              <div className="chervon_right">
-                <i className="fa-solid fa-chevron-right"></i>
+              <div className="icons">
+                <div className="chervon_right">
+                  <i className="fa-solid fa-chevron-right"></i>
+                </div>
+                <div className="heart_icon" onClick={(e) => handleLike(e, chair)}>
+                  <i className="fa-solid fa-heart"></i>
+                </div>
               </div>
+
 
             </Link>
           ))}

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom';
 
 export default function Header() {
@@ -9,9 +9,20 @@ export default function Header() {
 
     const navigate = useNavigate();
 
-    const handleLikeClick = () => {
-        navigate("/liked-products");  // Redirect to liked products page
+    const [likedProducts, setLikedProducts] = useState([]);
+
+    useEffect(() => {
+        const storedLikes = JSON.parse(localStorage.getItem("likedProducts")) || [];
+        setLikedProducts(storedLikes);
+    }, []);
+    
+    const handleLikeClick = (chair) => {
+        navigate("/liked-products"); 
+        const updatedLikes = [...likedProducts, chair];
+        setLikedProducts(updatedLikes);
+        localStorage.setItem("likedProducts", JSON.stringify(updatedLikes));
     };
+
 
     return (
         <div>
@@ -62,6 +73,8 @@ export default function Header() {
 
                 <div className="like-icon" onClick={handleLikeClick}>
                     <i className="fa-regular fa-heart"></i>
+                    {likedProducts.length > 0 && <span className="like-badge">{likedProducts.length}</span>}
+
                 </div>
 
             </header>
