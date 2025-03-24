@@ -93,15 +93,28 @@ export default function Home() {
 
   //split text
 
-  const text = "Ranger HB Revolving Chair";
-  const [key, setKey] = useState(0); // Force re-rendering after each loop
-
   useEffect(() => {
+    let index = 0;
     const interval = setInterval(() => {
-      setKey(prevKey => prevKey + 1); // Har loop ke baad component re-render hoga
-    }, 4000); // (2.5 sec animation + 2 sec wait)
+      const spans = document.querySelectorAll(".split-text span");
+      spans.forEach((span, i) => {
+        span.classList.remove("show");
+        if (i <= index) {
+          span.classList.add("show");
+        }
+      });
+      index++;
+      if (index > text.length) index = 0;
+    }, 200);
 
     return () => clearInterval(interval);
+  }, []);
+
+  const text = "Ranger HB Revolving Chair";
+  const [show, setShow] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => setShow(true), 500); // Animation start delay
   }, []);
 
 
@@ -195,8 +208,8 @@ export default function Home() {
       <div className="container sec2 mt-5 ">
 
         <div className="shop">
-          <h1>Shop <br />
-            by categories</h1>
+          <h1>Our Wide Range <br />
+            of Products</h1>
           <div className="red_line"></div>
           <p className='mt-2 ms-2' >200 + <br /> Unique Products</p>
 
@@ -352,7 +365,16 @@ export default function Home() {
 
         <div className="content">
           <p><b>DESIGNED 2025</b></p>
-          <h1 className="split-text">Ranger HB Revolving Chair</h1>
+          {/* <h1 className="split-text">Ranger HB Revolving Chair</h1> */}
+
+          <h1 className="split-text">
+            {text.split("").map((char, index) => (
+              <span key={index} className={show ? "show" : ""}>
+                {char === " " ? "\u00A0" : char}
+              </span>
+            ))}
+          </h1>
+
           <p>Synchro mechanism with multi-position locking arrangement. Class-4 gas lift for seat height adjustment and wheel filled nylon castors for smooth movement of the chair. Warranty: 3-year warranty covered on castors, base, gas-lift & Mechanism.</p>
 
           <div className="color-options">

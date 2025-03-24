@@ -64,7 +64,6 @@ export default function Chairs() {
       </div>
 
 
-
       <Footer />
     </div>
   )

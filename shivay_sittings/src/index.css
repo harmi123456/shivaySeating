@@ -339,7 +339,7 @@ header {
     align-items: center;
 
     .shop {
-        width: 25%;
+        width: 30%;
         height: 80%;
         font-family: 'Poppins';
 
@@ -380,7 +380,7 @@ header {
 
     /* //slider */
     .category {
-        width: 70%;
+        width: 65%;
         display: flex;
         align-items: center;
         position: relative;
@@ -771,20 +771,22 @@ header {
 
         h1 {
             color: #9e1b32;
+            font-size: 2rem;
+            display: flex;
+            flex-wrap: wrap;
         }
 
         .split-text span {
             opacity: 0;
             transform: translateY(20px);
             display: inline-block;
-            transition: opacity 0.5s ease, transform 0.5s ease;
+            transition: opacity 0.5s ease-out, transform 0.5s ease-out;
         }
 
         .split-text span.show {
             opacity: 1;
             transform: translateY(0);
         }
-
 
         .color-options {
             display: flex;
@@ -810,6 +812,21 @@ header {
     }
 
 }
+
+/* //split text */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 
 
 @media (max-width: 768px) {
@@ -849,20 +866,6 @@ header {
 
 
 
-
-/* //split text */
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
 
 
 
@@ -1933,24 +1936,24 @@ header {
     @media (max-width: 768px) {
         .chair_sec1 {
             height: auto;
-    
+
             .hero-section {
                 height: auto;
             }
-    
+
             .hero-title {
                 font-size: 2.5rem;
             }
-    
+
             .hero-subtext {
                 font-size: 1.2rem;
             }
-    
+
             .glass-cards {
                 flex-direction: column;
                 gap: 15px;
             }
-    
+
             .glass-card {
                 width: 90%;
                 height: auto;
@@ -1958,31 +1961,31 @@ header {
             }
         }
     }
-    
+
     @media (max-width: 480px) {
         .chair_sec1 {
             height: auto;
         }
-    
+
         .hero-title {
             font-size: 2rem;
         }
-    
+
         .hero-subtext {
             font-size: 1rem;
         }
-    
+
         .glass-card {
             width: 100%;
             height: auto;
             font-size: 0.9rem;
         }
-    
+
         .glass-card img {
             height: 70%;
         }
     }
-    
+
 
 }
 
@@ -2015,13 +2018,9 @@ header {
 
 
 
-
-
-
-
 /* //chair sec2 */
 
-.chair_sec2{
+.chair_sec2 {
 
     .section-heading {
         font-size: 28px;
@@ -2032,7 +2031,7 @@ header {
         text-align: center;
         font-family: "Poppins";
     }
-    
+
     .section-heading::after {
         content: "";
         width: 10%;
@@ -2053,7 +2052,7 @@ header {
         flex-wrap: wrap;
         justify-content: center;
     }
-    
+
     .chair-card {
         height: 300px;
         width: 280px;
@@ -2070,12 +2069,12 @@ header {
         padding: 10px;
         background: #f9f9f9;
     }
-    
+
     .chair-image {
         height: 80%;
         transition: transform 1s;
     }
-    
+
     .icons {
         position: absolute;
         top: 45%;
@@ -2087,7 +2086,7 @@ header {
         visibility: hidden;
         opacity: 0;
     }
-    
+
     .chervon_right,
     .heart_icon {
         width: 40px;
@@ -2099,45 +2098,482 @@ header {
         transition: transform 0.3s ease-in-out;
         cursor: pointer;
     }
-    
+
     .chervon_right i,
     .heart_icon i {
         color: white;
         font-size: 18px;
     }
-    
+
     .heart_icon {
         background: #fff;
         border: 1px solid #9e1b32;
     }
-    
+
     .heart_icon i {
         color: #9e1b32;
     }
-    
+
     .heart_icon:active {
         background: #9e1b32;
     }
-    
+
     .heart_icon:active i {
         color: white;
     }
-    
+
     .chair-card:hover .icons {
         right: 10px;
         visibility: visible;
         opacity: 1;
     }
-    
+
     .chair-card:hover .chair-image {
         transform: scale(1.1);
     }
-    
+
     .chair-card:hover .chair-name {
         color: #9e1b32;
         font-size: 18px;
         transition: 1s;
     }
-    
 
+
+}
+
+
+
+
+
+
+
+
+/* //sofa section */
+
+.sofa_sec1 {
+    height: 500px;
+    border: 2px solid;
+
+}
+
+/* 🎭 First Section */
+.sofa-section {
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(160deg, #323a31, #686662);
+    overflow: hidden;
+}
+
+/* 🌟 Next Section (Final Position) */
+.next-section {
+    height: 500px;
+    background: #f8f9fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    /* position: relative; */
+}
+
+/* 🛋️ Sofa & Chairs Base */
+.sofa-container {
+    position: absolute;
+    width: 100%;
+    height: 400px;
+}
+
+/* 🛋️ Sofa */
+.sofa {
+    width: 200px;
+    height: 100px;
+    background: #654321;
+    border-radius: 20px;
+    position: absolute;
+    transition: all 1.5s ease-in-out;
+}
+
+/* 🪑 Left & Right Chair */
+.chair-left,
+.chair-right {
+    width: 100px;
+    height: 120px;
+    background: #7c5732;
+    border-radius: 15px;
+    position: absolute;
+    transition: all 1.5s ease-in-out;
+}
+
+/* 🎭 Initial Floating Position */
+.stage-0 .sofa {
+    top: 10%;
+    left: 30%;
+    transform: rotate(40deg);
+}
+
+.stage-0 .chair-left {
+    top: 40%;
+    left: 10%;
+    transform: rotate(-30deg);
+}
+
+.stage-0 .chair-right {
+    top: 50%;
+    right: 10%;
+    transform: rotate(40deg);
+}
+
+.stage-1 .sofa {
+    top: 70%;
+    left: 45%;
+    transform: rotate(10deg);
+}
+
+.stage-1 .chair-left {
+    top: 60%;
+    left: 30%;
+    transform: rotate(-10deg);
+}
+
+.stage-1 .chair-right {
+    top: 65%;
+    right: 25%;
+    transform: rotate(10deg);
+}
+
+/* 🎭 Final Position - Dusre Section Me (Scroll > 600) */
+.stage-2 .sofa {
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.stage-2 .chair-left {
+    top: 20%;
+    left: 30%;
+    transform: rotate(0deg);
+}
+
+.stage-2 .chair-right {
+    top: 20%;
+    right: 30%;
+    transform: rotate(0deg);
+}
+
+
+
+
+
+
+
+
+
+
+/* //artOfSitting page start */
+.art_sec1 {
+    height: 500px;
+    margin-top: 60px;
+    width: 100%;
+
+    .hero {
+        height: 100%;
+        background: url('img/art10.jpeg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: white;
+        position: relative;
+    }
+
+    /* Creating a blurred overlay for the background */
+    .hero::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        backdrop-filter: blur(10px);
+        /* Background blur */
+        -webkit-backdrop-filter: blur(10px);
+        /* Safari support */
+        background: rgba(0, 0, 0, 0.3);
+        /* Slight dark overlay */
+    }
+
+    /* Ensuring content is above the blurred background */
+    .hero-content {
+        position: relative;
+        max-width: 600px;
+        padding: 20px;
+        background: rgba(255, 255, 255, 0.1);
+        /* Semi-transparent glass effect */
+        backdrop-filter: blur(5px);
+        /* Glassmorphism effect */
+        -webkit-backdrop-filter: blur(5px);
+        /* Safari support */
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        /* Light border */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        /* Soft shadow */
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+        color: #323a31;
+        font-family: 'Poppins';
+    }
+
+    p {
+        font-size: 1.2rem;
+        color: #444;
+        margin-bottom: 20px;
+    }
+
+    .explore-btn {
+        background-color: #cc3503;
+        /* background: rgba(255, 255, 255, 0.3); Transparent button */
+        color: white;
+        border: none;
+        padding: 12px 25px;
+        font-size: 1rem;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s ease;
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        /* border: 1px solid rgba(255, 255, 255, 0.5); */
+    }
+
+    .explore-btn:hover {
+        background-color: #ff2600;
+        /* background: rgba(255, 255, 255, 0.5); */
+    }
+}
+
+
+
+.art_sec2 {
+    height: 650px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+    .evolution-section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 50%;
+        transition: background 1s ease-in-out;
+        /* Smooth Background Change */
+        position: relative;
+        overflow: hidden;
+
+
+        .chair-container {
+            text-align: center;
+            position: relative;
+            backdrop-filter: blur(15px);
+            background: rgba(255, 255, 255, 0.15);
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.3);
+            transition: transform 0.5s ease, box-shadow 0.4s ease, opacity 0.6s ease;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            opacity: 0;
+        }
+
+        .show {
+            opacity: 1;
+        }
+
+        img {
+            width: 220px;
+            height: auto;
+            margin-bottom: 15px;
+            filter: drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.5));
+            transition: transform 0.4s ease, opacity 0.6s ease;
+            opacity: 0;
+        }
+
+        .show img {
+            transform: scale(1.1);
+            opacity: 1;
+            border-radius: 15px;
+        }
+
+        .chair-info {
+            color: white;
+            font-size: 22px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+            transition: opacity 0.6s ease, transform 0.4s ease;
+            opacity: 0;
+            transform: translateY(10px);
+        }
+
+        .show .chair-info {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Scroll Buttons */
+        .scroll-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(255, 255, 255, 0.15);
+            border: none;
+            padding: 15px;
+            font-size: 22px;
+            cursor: pointer;
+            border-radius: 50%;
+            transition: background 0.3s ease, box-shadow 0.3s ease;
+            color: white;
+            box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+        }
+
+        .scroll-btn:hover {
+            background: rgba(255, 255, 255, 0.3);
+            box-shadow: 0px 6px 15px rgba(255, 255, 255, 0.4);
+        }
+
+        .left {
+            left: 20px;
+        }
+
+        .right {
+            right: 20px;
+        }
+
+    }
+
+
+    .content {
+        width: 50%;
+        margin: auto;
+        padding: 20px;
+        background: #f8f9fa;
+        border-radius: 8px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+
+        .chair-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .chair-list li {
+            font-size: 18px;
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-left: 4px solid #9e1b32;
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+    }
+
+
+    @media (max-width: 768px) {
+        .evolution-section {
+            /* height: auto; */
+            width: 100%;
+            padding: 50px;
+        }
+
+        .content {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .art_sec2 {
+        height: auto;
+    }
+}
+
+
+.art_sec3 {
+    height: 650px;
+    display: flex;
+    flex-wrap: wrap;
+
+    .text-content {
+        width: 50%;
+        padding: 30px;
+        height: 100%;
+        background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+        text-align: left;
+
+        h1 {
+            font-size: 2rem;
+            color: #d34f23;
+            margin-bottom: 15px;
+            font-weight: bold;
+            font-family: "Poppins";
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #495057;
+        }
+
+        b {
+            color: #d34f23;
+        }
+
+    }
+
+    .art_img {
+        width: 50%;
+        height: 100%;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .art_img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: opacity 0.8s ease-in-out;
+    }
+    
+    .fade-in {
+        opacity: 1;
+    }
+    
+    .fade-out {
+        opacity: 0;
+    }
+    
+    @media (max-width:768px) {
+        .text-content{
+            
+            width: 100%;
+        }
+        .art_img{
+            height: 300px;
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 78px) {
+    .art_sec3{
+        height: auto;
+    }
 }
