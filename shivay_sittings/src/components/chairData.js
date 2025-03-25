@@ -112,3 +112,44 @@ export const sofasData = [
   { sofa_id: 73, name: "Bohemian Floor Sofa", image: "/img/sofa23.jpg", category: "bestSellers", price: "$600", description: "Low-seating comfort" },
   { sofa_id: 74, name: "Luxury Reclining Sofa", image: "/img/sofa24.jpg", category: "bestSellers", price: "$1700", description: "Ultimate comfort with reclining feature" },
 ];
+
+
+
+
+// products.js
+
+export const products = [
+  // 🪑 Chairs
+  { id: 75, name: "Executive Chair", image: "/img/executive3.jpeg", category: "chair", price: 150, material: "Leather", comfort: "High", rating: 4.5 },
+  { id: 76, name: "Corporate Chair", image: "/img/corpo_chair1.jpeg", category: "chair", price: 120, material: "Mesh", comfort: "Medium", rating: 4.2 },
+  { id: 77, name: "Ergonomic Chair", image: "/img/ergonomic_chair.jpg", category: "chair", price: 180, material: "Fabric", comfort: "Very High", rating: 4.8 },
+  { id: 78, name: "Recliner Chair", image: "/img/recliner_chair.jpg", category: "chair", price: 250, material: "Leather", comfort: "Ultra Soft", rating: 4.9 },
+  { id: 79, name: "Gaming Chair", image: "/img/gaming_chair.jpg", category: "chair", price: 200, material: "Synthetic Leather", comfort: "High", rating: 4.7 },
+  { id: 80, name: "Wooden Armchair", image: "/img/wooden_armchair.jpg", category: "chair", price: 100, material: "Solid Wood", comfort: "Medium", rating: 4.1 },
+  { id: 81, name: "Swivel Office Chair", image: "/img/swivel_office_chair.jpg", category: "chair", price: 140, material: "Mesh & Plastic", comfort: "High", rating: 4.3 },
+  { id: 82, name: "Mesh Office Chair", image: "/img/mesh_office_chair.jpg", category: "chair", price: 110, material: "Mesh", comfort: "Medium", rating: 4.0 },
+  { id: 83, name: "Bar Stool Chair", image: "/img/bar_stool_chair.jpg", category: "chair", price: 80, material: "Metal & Leather", comfort: "Low", rating: 3.8 },
+  { id: 84, name: "Folding Chair", image: "/img/folding_chair.jpg", category: "chair", price: 60, material: "Plastic", comfort: "Low", rating: 3.5 },
+  { id: 85, name: "Dining Chair", image: "/img/dining_chair.jpg", category: "chair", price: 90, material: "Wood & Cushion", comfort: "Medium", rating: 4.2 },
+  { id: 86, name: "Rocking Chair", image: "/img/rocking_chair.jpg", category: "chair", price: 170, material: "Wood & Fabric", comfort: "High", rating: 4.6 },
+
+  // 🛋 Sofas
+  { id: 87, name: "Modern Sofa", image: "/img/sofa2.jpg", category: "sofa", price: 300, material: "Fabric", comfort: "Very High", rating: 4.8 },
+  { id: 88, name: "Luxury Sofa", image: "/img/sofa4.jpg", category: "sofa", price: 400, material: "Velvet", comfort: "Ultra Soft", rating: 4.9 },
+  { id: 89, name: "Classic Leather Sofa", image: "/img/leather_sofa.jpg", category: "sofa", price: 350, material: "Leather", comfort: "High", rating: 4.7 },
+  { id: 90, name: "Velvet Couch", image: "/img/velvet_couch.jpg", category: "sofa", price: 330, material: "Velvet", comfort: "Very High", rating: 4.6 },
+  { id: 91, name: "Minimalist Sofa", image: "/img/minimalist_sofa.jpg", category: "sofa", price: 280, material: "Fabric", comfort: "Medium", rating: 4.2 },
+  { id: 92, name: "Sectional Sofa", image: "/img/sectional_sofa.jpg", category: "sofa", price: 500, material: "Leather", comfort: "Ultra Soft", rating: 4.9 },
+  { id: 93, name: "Sleeper Sofa", image: "/img/sleeper_sofa.jpg", category: "sofa", price: 450, material: "Fabric & Foam", comfort: "Very High", rating: 4.7 },
+  { id: 94, name: "Loveseat Sofa", image: "/img/loveseat_sofa.jpg", category: "sofa", price: 270, material: "Leather", comfort: "Medium", rating: 4.3 },
+  { id: 95, name: "Chesterfield Sofa", image: "/img/chesterfield_sofa.jpg", category: "sofa", price: 380, material: "Velvet", comfort: "High", rating: 4.5 },
+  { id: 96, name: "Tuxedo Sofa", image: "/img/tuxedo_sofa.jpg", category: "sofa", price: 360, material: "Fabric", comfort: "Medium", rating: 4.2 },
+  { id: 97, name: "Camelback Sofa", image: "/img/camelback_sofa.jpg", category: "sofa", price: 340, material: "Leather", comfort: "High", rating: 4.4 },
+  { id: 98, name: "Daybed Sofa", image: "/img/daybed_sofa.jpg", category: "sofa", price: 320, material: "Fabric", comfort: "Very High", rating: 4.6 }
+];
+
+
+
+
+
+

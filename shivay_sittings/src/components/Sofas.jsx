@@ -5,43 +5,43 @@ import { sofasData } from './chairData';
 import { Link } from 'react-router-dom';
 
 export default function Sofas() {
-  const [scrollStage, setScrollStage] = useState(0);
+
+  //sec1
+
+  const [swap, setSwap] = useState(false);
+  const [hover, setHover] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      const scrollY = window.scrollY;
-
-      if (scrollY > 600) {
-        setScrollStage(2); // Final Position (Dusre Section me)
-      } else if (scrollY > 50) {
-        setScrollStage(1); // Move Start
-      } else {
-        setScrollStage(0); // Initial Floating
-      }
+      setSwap((prev) => !prev);
     };
-
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
 
   return (
     <div>
       <Header />
 
-      <div className="container-fluid sofa_sec1">
-        <div className="main-container">
-          {/* First Section */}
-          <div className="sofa-section">
-            <div className={`sofa-container stage-${scrollStage}`}>
-              <div className="sofa"></div>
-              <div className="chair chair-left"></div>
-              <div className="chair chair-right"></div>
-            </div>
-          </div>
+      <div
+        className={`sofa_sec1 ${swap ? "swap" : ""} ${hover ? "hover" : ""}`}
+        onMouseEnter={() => setHover(true)}
+        onMouseLeave={() => setHover(false)}
+      >
+        <img src="/img/sofa_back.png" alt="sofa" className="floating-item item1" />
+        <img src="/img/chair_back.png" alt="chair" className="floating-item item2" />
+        <img src="/img/sofa2_back.png" alt="sofa" className="floating-item item3" />
+        <img src="/img/chair2_back.png" alt="chair" className="floating-item item4" />
+        <img src="/img/chair3_back.png" alt="chair" className="floating-item item5" />
 
-        </div>
+        <img src="/img/sofa3_back.png" alt="sofa" className="floating-item item6" />
+        <img src="/img/chair4_back.png" alt="chair" className="floating-item item7" />
+        <img src="/img/sofa4_back.png" alt="sofa" className="floating-item item8" />
+        <img src="/img/chair5_back.png" alt="chair" className="floating-item item9" />
+        <img src="/img/chair6_back.png" alt="chair" className="floating-item item10" />
+
       </div>
-
 
       {/* //sofa section2 */}
 

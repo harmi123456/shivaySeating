@@ -77,7 +77,35 @@ export default function ArtOfSitting() {
   }, []);
 
 
+  //sec4
+  //flip card effect 
 
+  const chairData = [
+    {
+      nowImg: "img/modernchair1.png",
+      nowText: "Ergonomic Perfection",
+      oldImg: "img/oldchair1.png",
+      oldText: "Vintage Wooden Classic"
+    },
+    {
+      nowImg: "img/modernchair2.png",
+      nowText: "Luxury Recliner",
+      oldImg: "img/oldchair2.png",
+      oldText: "Antique Wooden Chair"
+    },
+    {
+      nowImg: "img/modernchair3.png",
+      nowText: "Minimalist Comfort",
+      oldImg: "img/oldchair3.png",
+      oldText: "Timeless Heritage Chair"
+    },
+    {
+      nowImg: "img/modernchair4.png",
+      nowText: "Office Productivity",
+      oldImg: "img/oldchair4.png",
+      oldText: "Retro Executive Chair"
+    }
+  ];
 
   return (
     <div>
@@ -107,8 +135,6 @@ export default function ArtOfSitting() {
         </div>
 
       </div>
-
-
 
       <div className="art_sec2">
 
@@ -169,6 +195,28 @@ export default function ArtOfSitting() {
 
       </div>
 
+
+      <div className="art_sec4">
+        <div className="seating-evolution">
+          <h2>Seating Evolution: Then vs. Now</h2>
+          <div className="chair-grid">
+            {chairData.map((chair, index) => (
+              <div key={index} className="chair-container">
+                <div className="chair-card">
+                  <div className="chair-front">
+                    <img src={chair.nowImg} alt="Modern Chair" />
+                    <div className="chair-text">{chair.nowText}</div>
+                  </div>
+                  <div className="chair-back">
+                    <img src={chair.oldImg} alt="Old Chair" />
+                    <div className="chair-text">{chair.oldText}</div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
 
       <Footer />
 
