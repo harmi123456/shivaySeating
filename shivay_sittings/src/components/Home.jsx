@@ -32,14 +32,19 @@ const slides = [
 
 //client satisfaction
 const testimonials = [
-
-  { id: 1, text: "Great service!", author: "Alice" },
-  { id: 2, text: "Amazing experience!", author: "Bob" },
-  { id: 3, text: "Highly recommended!", author: "Charlie" },
-  { id: 4, text: "Superb support!", author: "David" },
-  { id: 5, text: "Loved it!", author: "Emma" },
-
+  { id: 1, text: "Great service!", image: "img/customer1.jpg" },
+  { id: 2, text: "Amazing experience!", image: "img/customer2.jpg" },
+  { id: 3, text: "Highly recommended!", image: "img/customer3.jpg" },
+  { id: 4, text: "Superb support!", image: "img/customer4.jpg" },
+  { id: 5, text: "Loved it!", image: "img/customer5.jpg" },
+  { id: 6, text: "Fantastic quality!", image: "img/customer6.jpg" },
+  { id: 7, text: "Absolutely worth it!", image: "img/customer7.jpg" },
+  { id: 8, text: "Exceptional experience!", image: "img/customer8.jpg" },
+  { id: 9, text: "So comfortable!", image: "img/customer9.jpg" },
+  { id: 10, text: "Five stars!", image: "img/customer10.jpg" },
+  { id: 11, text: "Best purchase ever!", image: "img/customer11.jpg" },
 ];
+
 
 
 export default function Home() {
@@ -132,6 +137,7 @@ export default function Home() {
     { color: "#995e18", img: "/img/chair4.jpg" },
     { color: "#1e7998", img: "/img/chair1.png" },
     { color: "#afaeb0", img: "/img/chair3.jpg" },
+    { color: "#303030", img: "/img/chair5(1).jpg" },
 
   ];
 
@@ -273,32 +279,32 @@ export default function Home() {
         </div>
 
       </div>
-      
+
 
       {/* //sec9 */}
 
       <div className="conatiner-fluid sec9">
         <Link to='/AirSeries' className="chair_rounded">
           <div>
-            <img src="img/chair_46.jpg" alt="AirSeries" style={{width: '250px'}} />
+            <img src="img/chair_46.jpg" alt="AirSeries" style={{ width: '250px' }} />
           </div>
         </Link>
 
         <Link to='/BarStool'>
           <div className="chair_rounded">
-            <img src="/img/chair_18.jpg" alt="BarStool" style={{width: '180px'}} />
+            <img src="/img/chair_18.jpg" alt="BarStool" style={{ width: '180px' }} />
           </div>
         </Link>
 
         <Link to='ExecutiveSeries'>
           <div className="chair_rounded">
-            <img src="/img/chair_49.jpg" alt="executive series" style={{width: '230px'}} />
+            <img src="/img/chair_49.jpg" alt="executive series" style={{ width: '230px' }} />
           </div>
         </Link>
 
         <Link to='PremiumSeries'>
           <div className="chair_rounded">
-            <img src="/img/chair_56.jpg" alt="premium series" style={{width: '240px'}} />
+            <img src="/img/chair_56.jpg" alt="premium series" style={{ width: '240px' }} />
           </div>
         </Link>
 
@@ -459,22 +465,24 @@ export default function Home() {
             <div className="marquee-content">
               {duplicatedTestimonials.map((t, index) => (
                 <div key={index} className="testimonial-box">
+                  <img src={t.image} alt={t.author} className="testimonial-img" />
                   <p>{t.text}</p>
-                  <h4>- {t.author}</h4>
                 </div>
               ))}
             </div>
           </div>
+
           <div className="marquee marquee-rtl">
             <div className="marquee-content">
               {duplicatedTestimonials.map((t, index) => (
                 <div key={index} className="testimonial-box">
+                  <img src={t.image} alt={t.author} className="testimonial-img" />
                   <p>{t.text}</p>
-                  <h4>- {t.author}</h4>
                 </div>
               ))}
             </div>
           </div>
+
         </div>
 
       </div>

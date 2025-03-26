@@ -36,47 +36,121 @@ export const chairsData = [
 
 //chair page
 
+// export const chairsData2 = [
+//   // MODERN CHAIRS
+//   { id: 25, name: "Aero Mesh Office Chair", image: "/img/modern1.jpg", category: "modern", price: "$180", description: "Breathable mesh design with lumbar support" },
+//   { id: 26, name: "Urban Recliner Chair", image: "/img/modern2.jpg", category: "modern", price: "$250", description: "Stylish and comfortable with cushioned armrests" },
+//   { id: 27, name: "Crescent Swivel Chair", image: "/img/modern3.jpg", category: "modern", price: "$320", description: "360-degree swivel with a sleek modern look" },
+
+//   // ERGONOMIC CHAIRS
+//   { id: 28, name: "ErgoPosture Executive Chair", image: "/img/ergonomic1.jpg", category: "ergonomic", price: "$400", description: "Designed for back support and posture correction" },
+//   { id: 29, name: "Flexi Comfort Chair", image: "/img/ergonomic2.jpg", category: "ergonomic", price: "$380", description: "Adjustable headrest and lumbar support" },
+//   { id: 30, name: "Zenith Ergonomic Mesh Chair", image: "/img/ergonomic3.jpg", category: "ergonomic", price: "$350", description: "Flexible and breathable, ideal for long hours" },
+
+//   // LUXURY CHAIRS
+//   { id: 31, name: "Opulent Leather Lounge", image: "/img/luxury1.jpg", category: "luxury", price: "$800", description: "Premium leather with plush cushioning" },
+//   { id: 32, name: "Velvet Royal Chair", image: "/img/luxury2.jpg", category: "luxury", price: "$750", description: "Elegant velvet finish with golden accents" },
+//   { id: 33, name: "Emperor's Throne Chair", image: "/img/luxury3.jpg", category: "luxury", price: "$1200", description: "Majestic design with superior craftsmanship" },
+
+//   // MINIMALIST CHAIRS
+//   { id: 34, name: "Nordic Simplicity Chair", image: "/img/minimalist1.jpg", category: "minimalist", price: "$190", description: "Scandinavian design with clean lines" },
+//   { id: 35, name: "Zen Comfort Chair", image: "/img/minimalist2.jpg", category: "minimalist", price: "$210", description: "Minimal yet extremely comfortable" },
+//   { id: 36, name: "AirLight Lounge Chair", image: "/img/minimalist3.jpg", category: "minimalist", price: "$250", description: "Lightweight and space-efficient" },
+
+//   // WOODEN CHAIRS
+//   { id: 37, name: "Oakwood Classic Chair", image: "/img/wooden1.jpg", category: "wooden", price: "$300", description: "Handcrafted solid oak chair" },
+//   { id: 38, name: "Rustic Farmhouse Chair", image: "/img/wooden2.jpg", category: "wooden", price: "$280", description: "Vintage charm with sturdy build" },
+//   { id: 39, name: "Maple Rocking Chair", image: "/img/wooden3.jpg", category: "wooden", price: "$350", description: "Smooth rocking motion with a classic look" },
+
+//   // OFFICE CHAIRS
+//   { id: 40, name: "Executive High-Back Chair", image: "/img/office1.jpg", category: "office", price: "$450", description: "Luxury and comfort for long meetings" },
+//   { id: 41, name: "Adjustable Work Chair", image: "/img/office2.jpg", category: "office", price: "$300", description: "Height-adjustable and ergonomic" },
+//   { id: 42, name: "Rolling Task Chair", image: "/img/office3.jpg", category: "office", price: "$220", description: "Perfect for dynamic office environments" },
+
+//   // GAMING CHAIRS
+//   { id: 43, name: "CyberPro Gaming Chair", image: "/img/gaming1.jpg", category: "gaming", price: "$500", description: "Designed for ultimate gaming comfort" },
+//   { id: 44, name: "RacerX Reclining Chair", image: "/img/gaming2.jpg", category: "gaming", price: "$550", description: "Race car-style with adjustable recline" },
+//   { id: 45, name: "Phantom Series Gaming Chair", image: "/img/gaming3.jpg", category: "gaming", price: "$600", description: "Premium gaming experience with ergonomic support" },
+
+//   // LOUNGE CHAIRS
+//   { id: 46, name: "CloudSoft Lounge Chair", image: "/img/lounge1.jpg", category: "lounge", price: "$700", description: "Sink into luxury with soft, deep cushions" },
+//   { id: 47, name: "Sunset Patio Chair", image: "/img/lounge2.jpg", category: "lounge", price: "$400", description: "Ideal for outdoor lounging" },
+//   { id: 48, name: "Reclining Relax Chair", image: "/img/lounge3.jpg", category: "lounge", price: "$450", description: "Reclines for maximum relaxation" },
+// ];
+
 export const chairsData2 = [
-  // MODERN CHAIRS
-  { id: 25, name: "Aero Mesh Office Chair", image: "/img/modern1.jpg", category: "modern", price: "$180", description: "Breathable mesh design with lumbar support" },
-  { id: 26, name: "Urban Recliner Chair", image: "/img/modern2.jpg", category: "modern", price: "$250", description: "Stylish and comfortable with cushioned armrests" },
-  { id: 27, name: "Crescent Swivel Chair", image: "/img/modern3.jpg", category: "modern", price: "$320", description: "360-degree swivel with a sleek modern look" },
-
-  // ERGONOMIC CHAIRS
-  { id: 28, name: "ErgoPosture Executive Chair", image: "/img/ergonomic1.jpg", category: "ergonomic", price: "$400", description: "Designed for back support and posture correction" },
-  { id: 29, name: "Flexi Comfort Chair", image: "/img/ergonomic2.jpg", category: "ergonomic", price: "$380", description: "Adjustable headrest and lumbar support" },
-  { id: 30, name: "Zenith Ergonomic Mesh Chair", image: "/img/ergonomic3.jpg", category: "ergonomic", price: "$350", description: "Flexible and breathable, ideal for long hours" },
-
-  // LUXURY CHAIRS
-  { id: 31, name: "Opulent Leather Lounge", image: "/img/luxury1.jpg", category: "luxury", price: "$800", description: "Premium leather with plush cushioning" },
-  { id: 32, name: "Velvet Royal Chair", image: "/img/luxury2.jpg", category: "luxury", price: "$750", description: "Elegant velvet finish with golden accents" },
-  { id: 33, name: "Emperor's Throne Chair", image: "/img/luxury3.jpg", category: "luxury", price: "$1200", description: "Majestic design with superior craftsmanship" },
-
-  // MINIMALIST CHAIRS
-  { id: 34, name: "Nordic Simplicity Chair", image: "/img/minimalist1.jpg", category: "minimalist", price: "$190", description: "Scandinavian design with clean lines" },
-  { id: 35, name: "Zen Comfort Chair", image: "/img/minimalist2.jpg", category: "minimalist", price: "$210", description: "Minimal yet extremely comfortable" },
-  { id: 36, name: "AirLight Lounge Chair", image: "/img/minimalist3.jpg", category: "minimalist", price: "$250", description: "Lightweight and space-efficient" },
-
-  // WOODEN CHAIRS
-  { id: 37, name: "Oakwood Classic Chair", image: "/img/wooden1.jpg", category: "wooden", price: "$300", description: "Handcrafted solid oak chair" },
-  { id: 38, name: "Rustic Farmhouse Chair", image: "/img/wooden2.jpg", category: "wooden", price: "$280", description: "Vintage charm with sturdy build" },
-  { id: 39, name: "Maple Rocking Chair", image: "/img/wooden3.jpg", category: "wooden", price: "$350", description: "Smooth rocking motion with a classic look" },
-
-  // OFFICE CHAIRS
-  { id: 40, name: "Executive High-Back Chair", image: "/img/office1.jpg", category: "office", price: "$450", description: "Luxury and comfort for long meetings" },
-  { id: 41, name: "Adjustable Work Chair", image: "/img/office2.jpg", category: "office", price: "$300", description: "Height-adjustable and ergonomic" },
-  { id: 42, name: "Rolling Task Chair", image: "/img/office3.jpg", category: "office", price: "$220", description: "Perfect for dynamic office environments" },
-
-  // GAMING CHAIRS
-  { id: 43, name: "CyberPro Gaming Chair", image: "/img/gaming1.jpg", category: "gaming", price: "$500", description: "Designed for ultimate gaming comfort" },
-  { id: 44, name: "RacerX Reclining Chair", image: "/img/gaming2.jpg", category: "gaming", price: "$550", description: "Race car-style with adjustable recline" },
-  { id: 45, name: "Phantom Series Gaming Chair", image: "/img/gaming3.jpg", category: "gaming", price: "$600", description: "Premium gaming experience with ergonomic support" },
-
-  // LOUNGE CHAIRS
-  { id: 46, name: "CloudSoft Lounge Chair", image: "/img/lounge1.jpg", category: "lounge", price: "$700", description: "Sink into luxury with soft, deep cushions" },
-  { id: 47, name: "Sunset Patio Chair", image: "/img/lounge2.jpg", category: "lounge", price: "$400", description: "Ideal for outdoor lounging" },
-  { id: 48, name: "Reclining Relax Chair", image: "/img/lounge3.jpg", category: "lounge", price: "$450", description: "Reclines for maximum relaxation" },
+  {
+    id: 1,
+    name: "Aero Mesh Office Chair",
+    image: "/img/chair_31.jpg",
+    hoverImage: "/img/chair_36.jpg",
+    description: "Breathable mesh design with lumbar support"
+  },
+  {
+    id: 2,
+    name: "Urban Recliner Chair",
+    image: "/img/chair_28.jpg",
+    hoverImage: "/img/chair_29.jpg",
+    description: "Stylish and comfortable with cushioned armrests"
+  },
+  {
+    id: 3,
+    name: "Executive Leather Chair",
+    image: "/img/chair_55.jpg",
+    hoverImage: "/img/chair_53.jpg",
+    description: "Premium leather finish with adjustable height"
+  },
+  {
+    id: 4,
+    name: "Ergonomic Swivel Chair",
+    image: "/img/chair_20.jpg",
+    hoverImage: "/img/chair_21.jpg",
+    description: "360-degree swivel with ergonomic back support"
+  },
+  {
+    id: 5,
+    name: "Executive Chair",
+    image: "/img/chair_2.jpg",
+    hoverImage: "/img/chair_5.jpg",
+    description: "Perfect for relaxation with soft cushioning"
+  },
+  {
+    id: 6,
+    name: "Minimalist Wooden Chair",
+    image: "/img/chair_37.jpg",
+    hoverImage: "/img/chair_34.jpg",
+    description: "Modern wooden finish with a classic touch"
+  },
+  {
+    id: 7,
+    name: "Gaming Pro Chair",
+    image: "/img/chair_60.jpg",
+    hoverImage: "/img/chair_59.jpg",
+    description: "Designed for gamers with ultimate comfort"
+  },
+  {
+    id: 8,
+    name: "Luxury Comfort Office Chair",
+    image: "/img/chair_64.jpg",
+    hoverImage: "/img/chair_63.jpg",
+    description: "Premium high-back office chair for ultimate comfort."
+  },
+  {
+    id: 9,
+    name: "Classic Armchair",
+    image: "/img/chair_65.jpg",
+    hoverImage: "/img/chair_66.jpg",
+    description: "Timeless design with soft fabric upholstery"
+  },
+  {
+    id: 10,
+    name: "Modern Bar Stool",
+    image: "/img/chair_32.jpg",
+    hoverImage: "/img/chair_35.jpg",
+    description: "Perfect for kitchen or bar counter seating"
+  }
 ];
+
 
 
 
@@ -149,9 +223,3 @@ export const products = [
   { id: 97, name: "Camelback Sofa", image: "/img/camelback_sofa.jpg", category: "sofa", price: 340, material: "Leather", comfort: "High", rating: 4.4 },
   { id: 98, name: "Daybed Sofa", image: "/img/daybed_sofa.jpg", category: "sofa", price: 320, material: "Fabric", comfort: "Very High", rating: 4.6 }
 ];
-
-
-
-
-
-
