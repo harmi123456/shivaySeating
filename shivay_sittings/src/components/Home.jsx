@@ -128,7 +128,7 @@ export default function Home() {
   const [selectedColor, setSelectedColor] = useState("/img/chair1.png");
 
   const chairColors = [
-    { color: "#7f9eb0", img: "/img/chair2.jpg" },
+    { color: "#7f9eb0", img: "/img/chair2(1).jpg" },
     { color: "#995e18", img: "/img/chair4.jpg" },
     { color: "#1e7998", img: "/img/chair1.png" },
     { color: "#afaeb0", img: "/img/chair3.jpg" },
