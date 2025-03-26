@@ -11,7 +11,7 @@ export default function Footer() {
 
                     {/* Left Section - Logo & Socials */}
                     <div className="footer-section logo-section">
-                        <img src="/img/logo.png" alt="Shivay Seatings Logo" className="footer-logo" />
+                        <img src="/img/logo2.png" alt="Shivay Seatings Logo" className="footer-logo" />
                         <p>Sophisticated simplicity for the independent mind.</p>
                         <div className="social-icons">
                             <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><i className="fab fa-twitter"></i></a>
