@@ -275,6 +275,42 @@ export default function Home() {
       </div>
 
 
+      {/* //sec9 */}
+
+      <div className="conatiner-fluid sec9">
+        <Link to='/AirSeries' className="chair_rounded">
+          <div>
+            <img src="img/chair_46.jpg" alt="AirSeries" style={{width: '250px'}} />
+          </div>
+        </Link>
+
+        <Link to='/BarStool'>
+          <div className="chair_rounded">
+            <img src="/img/chair_18.jpg" alt="BarStool" style={{width: '180px'}} />
+          </div>
+        </Link>
+
+        <Link to='ExecutiveSeries'>
+          <div className="chair_rounded">
+            <img src="/img/chair_49.jpg" alt="executive series" style={{width: '230px'}} />
+          </div>
+        </Link>
+
+        <Link to='PremiumSeries'>
+          <div className="chair_rounded">
+            <img src="/img/chair_56.jpg" alt="premium series" style={{width: '240px'}} />
+          </div>
+        </Link>
+
+        <Link to='VisitorSeries'>
+          <div className="chair_rounded">
+            <img src="/img/chair_14.jpg" alt="" />
+          </div>
+        </Link>
+
+      </div>
+
+
       {/* //sec3 */}
 
       <div className="sec3 container mt-5">
