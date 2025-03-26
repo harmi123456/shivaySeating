@@ -32,6 +32,8 @@ export const chairsData = [
 ];
 
 
+
+
 //chair page
 
 export const chairsData2 = [
