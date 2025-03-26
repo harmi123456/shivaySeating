@@ -514,6 +514,15 @@ header {
 
 }
 
+@media (max-width: 768px) {
+    .sec9{
+        height: auto;
+        .chair_rounded{
+            margin: 50px;
+        }
+    }
+}
+
 
 
 
