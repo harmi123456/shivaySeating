@@ -1,82 +1,50 @@
 export const chairsData = [
 
   // LATEST PRODUCTS
-  { id: 1, name: "Flair HB and MB Revolving Chair", image: "/img/chair_6.jpg", category: "latest", price: "$150", description: "Comfortable modern chair" },
-  { id: 2, name: "Comet Revolving Chair", image: "/img/chair_10.jpg", category: "latest", price: "$200", description: "Elegant wooden chair" },
-  { id: 3, name: "Zen HB Grey Revolving Chair", image: "/img/chair_3.jpg", category: "latest", price: "$300", description: "Premium comfort chair" },
-  { id: 4, name: "Zigzag Grey Revolving Chair", image: "/img/chair_16.jpg", category: "latest", price: "$180", description: "Adjustable office chair" },
-  { id: 5, name: "Zing HB Revolving Chair", image: "/img/chair_15.jpg", category: "latest", price: "$400", description: "Perfect for relaxation" },
-  { id: 6, name: "Zak HB Revolving Chair", image: "/img/chair_5.jpg", category: "latest", price: "$250", description: "Classic rocking chair" },
-  { id: 7, name: "Panther MB Revolving Chair", image: "/img/chair_7.jpg", category: "latest", price: "$50", description: "Lightweight plastic chair" },
-  { id: 8, name: "Butterfly MB Revolving Chair", image: "/img/chair_72.jpg", category: "latest", price: "$500", description: "Best for gaming sessions" },
+  { id: 1, name: "Flair HB and MB Revolving Chair", image: "/img/chair_6.jpg", category: "latest", description: "Comfortable modern chair" },
+  { id: 2, name: "Comet Revolving Chair", image: "/img/chair_10.jpg", category: "latest", description: "Elegant wooden chair" },
+  { id: 3, name: "Zen HB Grey Revolving Chair", image: "/img/chair_3.jpg", category: "latest", description: "Premium comfort chair" },
+  { id: 4, name: "Zigzag Grey Revolving Chair", image: "/img/chair_16.jpg", category: "latest", description: "Adjustable office chair" },
+  { id: 5, name: "Zing HB Revolving Chair", image: "/img/chair_15.jpg", category: "latest", description: "Perfect for relaxation" },
+  { id: 6, name: "Zak HB Revolving Chair", image: "/img/chair_5.jpg", category: "latest", description: "Classic rocking chair" },
+  { id: 7, name: "Panther MB Revolving Chair", image: "/img/chair_7.jpg", category: "latest", description: "Lightweight plastic chair" },
+  { id: 8, name: "Butterfly MB Revolving Chair", image: "/img/chair_72.jpg", category: "latest", description: "Best for gaming sessions" },
 
   // TOP RATING
-  { id: 9, name: "Virgo Revolving Chair", image: "img/chair_7.jpg", category: "topRated", price: "$350", description: "Luxury office chair" },
-  { id: 10, name: "Flair HB and MB Revolving Chair", image: "img/chair_6.jpg", category: "topRated", price: "$220", description: "360-degree swivel" },
-  { id: 11, name: "Aura Revolving Chair", image: "img/chair_12.jpg", category: "topRated", price: "$480", description: "Perfect for lounges" },
-  { id: 12, name: "ZingZag Black Revolving Chair", image: "img/chair_14.jpg", category: "topRated", price: "$130", description: "Stylish dining chair" },
-  { id: 13, name: "Butterfly HB Revolving Chair", image: "img/chair_73.jpg", category: "topRated", price: "$270", description: "Extra comfort cushion" },
-  { id: 14, name: "Zorro Revolving Chair", image: "img/chair_15.jpg", category: "topRated", price: "$210", description: "Strong wooden frame" },
-  { id: 15, name: "CLOUD MB Back", image: "img/chair_10.jpg", category: "topRated", price: "$190", description: "Simple yet stylish" },
-  { id: 16, name: "Vibe MB Revolving Chair", image: "img/chair_13.jpg", category: "topRated", price: "$600", description: "Best for back support" },
+  { id: 9, name: "Virgo Revolving Chair", image: "img/chair_7.jpg", category: "topRated", description: "Luxury office chair" },
+  { id: 10, name: "Flair HB and MB Revolving Chair", image: "img/chair_6.jpg", category: "topRated", description: "360-degree swivel" },
+  { id: 11, name: "Aura Revolving Chair", image: "img/chair_12.jpg", category: "topRated", description: "Perfect for lounges" },
+  { id: 12, name: "ZigZag Black Revolving Chair", image: "img/chair_14.jpg", category: "topRated", description: "Stylish dining chair" },
+  { id: 13, name: "Butterfly HB Revolving Chair", image: "img/chair_73.jpg", category: "topRated", description: "Extra comfort cushion" },
+  { id: 14, name: "Zorro Revolving Chair", image: "img/chair_15.jpg", category: "topRated", description: "Strong wooden frame" },
+  { id: 15, name: "CLOUD MB Back", image: "img/chair_10.jpg", category: "topRated", description: "Simple yet stylish" },
+  { id: 16, name: "Vibe MB Revolving Chair", image: "img/chair_13.jpg", category: "topRated", description: "Best for back support" },
 
   // BEST SELLERS
-  { id: 17, name: "CLOUD MB Back", image: "img/chair_10.jpg", category: "bestSellers", price: "$700", description: "Top comfort chair" },
-  { id: 18, name: "Vibe MB Revolving Chair", image: "img/chair_13.jpg", category: "bestSellers", price: "$320", description: "Breathable mesh" },
-  { id: 19, name: "Scorpio Revolving Chair", image: "img/chair_3.jpg", category: "bestSellers", price: "$380", description: "Supportive high-back" },
-  { id: 20, name: "Butterfly MB Revolving Chair", image: "img/chair_72.jpg", category: "bestSellers", price: "$450", description: "Premium leather finish" },
-  { id: 21, name: "Libra Revolving Chair", image: "img/chair_2.jpg", category: "bestSellers", price: "$500", description: "Soft velvet seat" },
-  { id: 22, name: "Panther MB Revolving Chair", image: "img/chair_7.jpg", category: "bestSellers", price: "$120", description: "Easy to carry" },
-  { id: 23, name: "Matrix HB Revolving Chair", image: "img/chair_8.jpg", category: "bestSellers", price: "$180", description: "Super cozy" },
-  { id: 24, name: "Zack HB Revovling Chair", image: "img/chair_15.jpg", category: "bestSellers", price: "$250", description: "Handmade wicker chair" },
+  { id: 17, name: "CLOUD MB Back", image: "img/chair_10.jpg", category: "bestSellers", description: "Top comfort chair" },
+  { id: 18, name: "Vibe MB Revolving Chair", image: "img/chair_13.jpg", category: "bestSellers", description: "Breathable mesh" },
+  { id: 19, name: "Scorpio Revolving Chair", image: "img/chair_3.jpg", category: "bestSellers", description: "Supportive high-back" },
+  { id: 20, name: "Butterfly MB Revolving Chair", image: "img/chair_72.jpg", category: "bestSellers", description: "Premium leather finish" },
+  { id: 21, name: "Libra Revolving Chair", image: "img/chair_2.jpg", category: "bestSellers", description: "Soft velvet seat" },
+  { id: 22, name: "Panther MB Revolving Chair", image: "img/chair_7.jpg", category: "bestSellers", description: "Easy to carry" },
+  { id: 23, name: "Matrix HB Revolving Chair", image: "img/chair_8.jpg", category: "bestSellers", description: "Super cozy" },
+  { id: 24, name: "Zack HB Revovling Chair", image: "img/chair_15.jpg", category: "bestSellers", description: "Handmade wicker chair" },
+];
+
+export const relatedProducts = [
+  { id: 3, name: "Zen HB Grey Revolving Chair", image: "/img/chair_3.jpg", description: "An executive-style chair designed for comfort and elegance, with an adjustable headrest and smooth-rolling wheels." },
+  { id: 5, name: "Zing HB Revolving Chair", image: "/img/chair_15.jpg", description: "A luxurious high-back chair offering extra padding and an ergonomic structure for long working hours." },
+  { id: 10, name: "Flair HB and MB Revolving Chair", image: "/img/chair_6.jpg", description: "Perfect for office use, this chair offers smooth swiveling and a mesh back for enhanced breathability and comfort." },
+  { id: 12, name: "ZigZag Black Revolving Chair", image: "/img/chair_14.jpg", description: "A bold black design with a modern touch, ideal for gaming or professional workspaces." },
+  { id: 21, name: "Libra Revolving Chair", image: "/img/chair_2.jpg", description: "An elegant, soft velvet seat chair that provides excellent support and adds sophistication to any space." },
 ];
 
 
 
 
+
+
 //chair page
-
-// export const chairsData2 = [
-//   // MODERN CHAIRS
-//   { id: 25, name: "Aero Mesh Office Chair", image: "/img/modern1.jpg", category: "modern", price: "$180", description: "Breathable mesh design with lumbar support" },
-//   { id: 26, name: "Urban Recliner Chair", image: "/img/modern2.jpg", category: "modern", price: "$250", description: "Stylish and comfortable with cushioned armrests" },
-//   { id: 27, name: "Crescent Swivel Chair", image: "/img/modern3.jpg", category: "modern", price: "$320", description: "360-degree swivel with a sleek modern look" },
-
-//   // ERGONOMIC CHAIRS
-//   { id: 28, name: "ErgoPosture Executive Chair", image: "/img/ergonomic1.jpg", category: "ergonomic", price: "$400", description: "Designed for back support and posture correction" },
-//   { id: 29, name: "Flexi Comfort Chair", image: "/img/ergonomic2.jpg", category: "ergonomic", price: "$380", description: "Adjustable headrest and lumbar support" },
-//   { id: 30, name: "Zenith Ergonomic Mesh Chair", image: "/img/ergonomic3.jpg", category: "ergonomic", price: "$350", description: "Flexible and breathable, ideal for long hours" },
-
-//   // LUXURY CHAIRS
-//   { id: 31, name: "Opulent Leather Lounge", image: "/img/luxury1.jpg", category: "luxury", price: "$800", description: "Premium leather with plush cushioning" },
-//   { id: 32, name: "Velvet Royal Chair", image: "/img/luxury2.jpg", category: "luxury", price: "$750", description: "Elegant velvet finish with golden accents" },
-//   { id: 33, name: "Emperor's Throne Chair", image: "/img/luxury3.jpg", category: "luxury", price: "$1200", description: "Majestic design with superior craftsmanship" },
-
-//   // MINIMALIST CHAIRS
-//   { id: 34, name: "Nordic Simplicity Chair", image: "/img/minimalist1.jpg", category: "minimalist", price: "$190", description: "Scandinavian design with clean lines" },
-//   { id: 35, name: "Zen Comfort Chair", image: "/img/minimalist2.jpg", category: "minimalist", price: "$210", description: "Minimal yet extremely comfortable" },
-//   { id: 36, name: "AirLight Lounge Chair", image: "/img/minimalist3.jpg", category: "minimalist", price: "$250", description: "Lightweight and space-efficient" },
-
-//   // WOODEN CHAIRS
-//   { id: 37, name: "Oakwood Classic Chair", image: "/img/wooden1.jpg", category: "wooden", price: "$300", description: "Handcrafted solid oak chair" },
-//   { id: 38, name: "Rustic Farmhouse Chair", image: "/img/wooden2.jpg", category: "wooden", price: "$280", description: "Vintage charm with sturdy build" },
-//   { id: 39, name: "Maple Rocking Chair", image: "/img/wooden3.jpg", category: "wooden", price: "$350", description: "Smooth rocking motion with a classic look" },
-
-//   // OFFICE CHAIRS
-//   { id: 40, name: "Executive High-Back Chair", image: "/img/office1.jpg", category: "office", price: "$450", description: "Luxury and comfort for long meetings" },
-//   { id: 41, name: "Adjustable Work Chair", image: "/img/office2.jpg", category: "office", price: "$300", description: "Height-adjustable and ergonomic" },
-//   { id: 42, name: "Rolling Task Chair", image: "/img/office3.jpg", category: "office", price: "$220", description: "Perfect for dynamic office environments" },
-
-//   // GAMING CHAIRS
-//   { id: 43, name: "CyberPro Gaming Chair", image: "/img/gaming1.jpg", category: "gaming", price: "$500", description: "Designed for ultimate gaming comfort" },
-//   { id: 44, name: "RacerX Reclining Chair", image: "/img/gaming2.jpg", category: "gaming", price: "$550", description: "Race car-style with adjustable recline" },
-//   { id: 45, name: "Phantom Series Gaming Chair", image: "/img/gaming3.jpg", category: "gaming", price: "$600", description: "Premium gaming experience with ergonomic support" },
-
-//   // LOUNGE CHAIRS
-//   { id: 46, name: "CloudSoft Lounge Chair", image: "/img/lounge1.jpg", category: "lounge", price: "$700", description: "Sink into luxury with soft, deep cushions" },
-//   { id: 47, name: "Sunset Patio Chair", image: "/img/lounge2.jpg", category: "lounge", price: "$400", description: "Ideal for outdoor lounging" },
-//   { id: 48, name: "Reclining Relax Chair", image: "/img/lounge3.jpg", category: "lounge", price: "$450", description: "Reclines for maximum relaxation" },
-// ];
 
 export const chairsData2 = [
   {
@@ -222,4 +190,102 @@ export const products = [
   { id: 96, name: "Tuxedo Sofa", image: "/img/tuxedo_sofa.jpg", category: "sofa", price: 360, material: "Fabric", comfort: "Medium", rating: 4.2 },
   { id: 97, name: "Camelback Sofa", image: "/img/camelback_sofa.jpg", category: "sofa", price: 340, material: "Leather", comfort: "High", rating: 4.4 },
   { id: 98, name: "Daybed Sofa", image: "/img/daybed_sofa.jpg", category: "sofa", price: 320, material: "Fabric", comfort: "Very High", rating: 4.6 }
+];
+
+
+
+
+//AirSeries
+
+export const Air_Series = [
+  { id: 101, name: "Flair HB and MB Revolving Chair", image: "/img/chair_6.jpg", category: "latest", price: "$150", description: "Comfortable modern chair" },
+  { id: 102, name: "Comet Revolving Chair", image: "/img/chair_10.jpg", category: "latest", price: "$200", description: "Elegant wooden chair" },
+  { id: 103, name: "Zen HB Grey Revolving Chair", image: "/img/chair_3.jpg", category: "latest", price: "$300", description: "Premium comfort chair" },
+  { id: 104, name: "Zigzag Grey Revolving Chair", image: "/img/chair_16.jpg", category: "latest", price: "$180", description: "Adjustable office chair" },
+  { id: 105, name: "Zing HB Revolving Chair", image: "/img/chair_15.jpg", category: "latest", price: "$400", description: "Perfect for relaxation" },
+  { id: 106, name: "Zak HB Revolving Chair", image: "/img/chair_5.jpg", category: "latest", price: "$250", description: "Classic rocking chair" },
+  { id: 107, name: "Panther MB Revolving Chair", image: "/img/chair_7.jpg", category: "latest", price: "$50", description: "Lightweight plastic chair" },
+  { id: 108, name: "Butterfly MB Revolving Chair", image: "/img/chair_72.jpg", category: "latest", price: "$500", description: "Best for gaming sessions" },
+  { id: 109, name: "Virgo Revolving Chair", image: "img/chair_7.jpg", category: "topRated", price: "$350", description: "Luxury office chair" },
+  { id: 110, name: "Scorpio Revolving Chair", image: "img/chair_3.jpg", category: "bestSellers", price: "$380", description: "Supportive high-back" },
+  { id: 111, name: "Aura Revolving Chair", image: "img/chair_12.jpg", category: "topRated", price: "$480", description: "Perfect for lounges" },
+  { id: 112, name: "ZingZag Black Revolving Chair", image: "img/chair_14.jpg", category: "topRated", price: "$130", description: "Stylish dining chair" },
+  { id: 113, name: "Zorro Revolving Chair", image: "img/chair_15.jpg", category: "topRated", price: "$210", description: "Strong wooden frame" },
+  { id: 114, name: "Vibe MB Revolving Chair", image: "img/chair_13.jpg", category: "topRated", price: "$600", description: "Best for back support" },
+  { id: 115, name: "Libra Revolving Chair", image: "img/chair_2.jpg", category: "bestSellers", price: "$500", description: "Soft velvet seat" },
+  { id: 116, name: "Matrix HB Revolving Chair", image: "img/chair_8.jpg", category: "bestSellers", price: "$180", description: "Super cozy" },
+]
+
+
+
+//BarStool
+
+export const Bar_Series = [
+  { id: 117, name: "Modern Leather Barstool", image: "/img/chair_17.jpg", category: "latest", price: "$150", description: "Premium leather barstool with footrest" },
+  { id: 118, name: "Adjustable Swivel Barstool", image: "/img/chair_18.jpg", category: "latest", price: "$200", description: "Height-adjustable modern barstool" },
+  { id: 119, name: "Vintage Wooden Barstool", image: "/img/chair_19.jpg", category: "latest", price: "$300", description: "Classic wooden design with cushioned seat" },
+  { id: 120, name: "Industrial Metal Barstool", image: "/img/chair_21.jpg", category: "latest", price: "$180", description: "Rustic-style sturdy metal frame" },
+  { id: 121, name: "High Back Barstool", image: "/img/chair_23.jpg", category: "latest", price: "$50", description: "Comfortable high-back barstool" },
+  { id: 122, name: "Luxury Velvet Barstool", image: "/img/chair_24.jpg", category: "latest", price: "$500", description: "Soft velvet seat with gold legs" },
+  { id: 123, name: "Retro Barstool", image: "/img/chair_25.jpg", category: "topRated", price: "$350", description: "Classic 1950s diner-style barstool" },
+  { id: 124, name: "Scandinavian Barstool", image: "/img/chair_26.jpg", category: "bestSellers", price: "$380", description: "Minimalist design with ergonomic seat" },
+  { id: 125, name: "Leatherette Barstool", image: "/img/chair_29.jpg", category: "topRated", price: "$210", description: "Faux leather cushioned barstool" },
+  { id: 126, name: "Luxury Gold Barstool", image: "/img/chair_30.jpg", category: "topRated", price: "$600", description: "Gold-plated frame with premium upholstery" },
+  { id: 127, name: "Classic Round Barstool", image: "/img/chair_31.jpg", category: "bestSellers", price: "$500", description: "Traditional round wooden barstool" },
+  { id: 128, name: "Ergonomic Swivel Barstool", image: "/img/chair_35.jpg", category: "bestSellers", price: "$180", description: "360-degree swivel with lumbar support" },
+];
+
+
+//executive series
+
+export const Executive_Series = [
+  { id: 129, name: "Elite Executive Chair", image: "/img/chair_38.jpg", category: "Executive Series", price: "$150", description: "Premium leather executive chair with ergonomic support" },
+  { id: 130, name: "Adjustable Boss Chair", image: "/img/chair_39.jpg", category: "Executive Series", price: "$200", description: "Height-adjustable executive chair with high backrest" },
+  { id: 131, name: "Luxury Wooden Executive Chair", image: "/img/chair_40.jpg", category: "Executive Series", price: "$300", description: "Classic wooden frame with cushioned leather seat" },
+  { id: 132, name: "Ergonomic Office Chair", image: "/img/chair_41.jpg", category: "Executive Series", price: "$180", description: "Sturdy design with breathable mesh and lumbar support" },
+  { id: 133, name: "High-Back Leather Chair", image: "/img/chair_42.jpg", category: "Executive Series", price: "$50", description: "Luxurious leather chair with high backrest for maximum comfort" },
+  { id: 134, name: "Velvet Elite Chair", image: "/img/chair_43.jpg", category: "Executive Series", price: "$500", description: "Soft velvet executive chair with gold-finished legs" },
+  { id: 135, name: "Retro Executive Chair", image: "/img/chair_44.jpg", category: "Executive Series", price: "$350", description: "Classic executive chair with a vintage-inspired design" },
+  { id: 136, name: "Scandinavian Office Chair", image: "/img/chair_45.jpg", category: "Executive Series", price: "$380", description: "Minimalist executive chair with ergonomic seating" },
+  { id: 137, name: "Premium Leatherette Chair", image: "/img/chair_46.jpg", category: "Executive Series", price: "$210", description: "Faux leather executive chair with extra padding" },
+  { id: 138, name: "Luxury Gold Executive Chair", image: "/img/chair_47.jpg", category: "Executive Series", price: "$600", description: "Gold-plated frame with high-end cushioning" },
+  { id: 139, name: "Classic Wooden Office Chair", image: "/img/chair_48.jpg", category: "Executive Series", price: "$500", description: "Traditional wooden executive chair with refined craftsmanship" },
+  { id: 140, name: "Ergonomic Swivel Executive Chair", image: "/img/chair_49.jpg", category: "Executive Series", price: "$180", description: "360-degree swivel chair with advanced lumbar support" },
+];
+
+
+
+//premium series
+
+export const Premium_Series = [
+  { id: 141, name: "Premium Executive Chair", image: "/img/chair_50.jpg", category: "Premium Series", price: "$150", description: "Premium leather executive chair with ergonomic support" },
+  { id: 142, name: "Premium Adjustable Boss Chair", image: "/img/chair_51.jpg", category: "Premium Series", price: "$200", description: "Height-adjustable premium executive chair with a high backrest" },
+  { id: 143, name: "Premium Wooden Executive Chair", image: "/img/chair_52.jpg", category: "Premium Series", price: "$300", description: "Classic wooden frame with a cushioned premium leather seat" },
+  { id: 144, name: "Premium Ergonomic Office Chair", image: "/img/chair_53.jpg", category: "Premium Series", price: "$180", description: "Sturdy design with breathable mesh and premium lumbar support" },
+  { id: 145, name: "Premium High-Back Leather Chair", image: "/img/chair_54.jpg", category: "Premium Series", price: "$50", description: "Luxurious premium leather chair with a high backrest for maximum comfort" },
+  { id: 146, name: "Premium Velvet Elite Chair", image: "/img/chair_55.jpg", category: "Premium Series", price: "$500", description: "Soft velvet premium chair with gold-finished legs" },
+  { id: 147, name: "Premium Retro Executive Chair", image: "/img/chair_56.jpg", category: "Premium Series", price: "$350", description: "Classic premium executive chair with a vintage-inspired design" },
+  { id: 148, name: "Premium Scandinavian Office Chair", image: "/img/chair_57.jpg", category: "Premium Series", price: "$380", description: "Minimalist premium chair with ergonomic seating" },
+  { id: 149, name: "Premium Leatherette Chair", image: "/img/chair_58.jpg", category: "Premium Series", price: "$210", description: "Faux leather premium chair with extra padding" },
+  { id: 150, name: "Premium Gold Executive Chair", image: "/img/chair_59.jpg", category: "Premium Series", price: "$600", description: "Gold-plated frame with high-end premium cushioning" },
+  { id: 151, name: "Premium Wooden Office Chair", image: "/img/chair_60.jpg", category: "Premium Series", price: "$500", description: "Traditional wooden premium chair with refined craftsmanship" },
+  { id: 152, name: "Premium Ergonomic Swivel Chair", image: "/img/chair_62.jpg", category: "Premium Series", price: "$180", description: "360-degree premium swivel chair with advanced lumbar support" },
+  { id: 153, name: "Premium Ergonomic Swivel Chair", image: "/img/chair_63.jpg", category: "Premium Series", price: "$180", description: "360-degree premium swivel chair with advanced lumbar support" },
+  { id: 154, name: "Premium Ergonomic Swivel Chair", image: "/img/chair_64.jpg", category: "Premium Series", price: "$180", description: "360-degree premium swivel chair with advanced lumbar support" },
+  { id: 155, name: "Premium Ergonomic Swivel Chair", image: "/img/chair_65.jpg", category: "Premium Series", price: "$180", description: "360-degree premium swivel chair with advanced lumbar support" },
+  { id: 156, name: "Premium Ergonomic Swivel Chair", image: "/img/chair_67.jpg", category: "Premium Series", price: "$180", description: "360-degree premium swivel chair with advanced lumbar support" },
+];
+
+
+
+
+//premium series
+
+export const visitor_Series = [
+  { id: 157, name: "Visitor Executive Chair", image: "/img/chair_68.jpg", category: "Visitor Series", price: "$150", description: "Comfortable executive chair designed for visitors" },
+  { id: 158, name: "Visitor Adjustable Chair", image: "/img/chair_69.jpg", category: "Visitor Series", price: "$200", description: "Adjustable height visitor chair with a sturdy design" },
+  { id: 159, name: "Visitor Wooden Chair", image: "/img/chair_70.jpg", category: "Visitor Series", price: "$300", description: "Elegant wooden chair ideal for visitor seating" },
+  { id: 160, name: "Visitor Ergonomic Chair", image: "/img/chair_71.jpg", category: "Visitor Series", price: "$180", description: "Ergonomic visitor chair with lumbar support" },
+  { id: 161, name: "Visitor High-Back Chair", image: "/img/chair_72.jpg", category: "Visitor Series", price: "$50", description: "High-back visitor chair for enhanced comfort" },
+  { id: 162, name: "Visitor Velvet Chair", image: "/img/chair_73.jpg", category: "Visitor Series", price: "$500", description: "Luxurious velvet chair perfect for visitor lounges" },
 ];

@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react'
+import Header from './Header';
+import Footer from './Footer';
 
 export default function Liked_products() {
 
@@ -12,17 +14,29 @@ export default function Liked_products() {
 
 
   return (
-    <div>
-      <h2>Liked Products</h2>
-      <div className="liked-container">
-        {likedProducts.map((chair) => (
-          <div key={chair.id} className="liked-card">
-            <img src={chair.image} alt={chair.name} />
-            <h5>{chair.name}</h5>
+    <>
+
+      <Header />
+
+      <div className="liked-products-section">
+        <h2 className="liked-title">❤️ Liked Products</h2>
+        {likedProducts.length === 0 ? (
+          <p className="empty-message">No liked products yet! Start exploring.</p>
+        ) : (
+          <div className="liked-container">
+            {likedProducts.map((chair) => (
+              <div key={chair.id} className="liked-card">
+                <img src={chair.image} alt={chair.name} className="liked-img" />
+                <h5 className="liked-name">{chair.name}</h5>
+              </div>
+            ))}
           </div>
-        ))}
+        )}
       </div>
-    </div>
+
+      <Footer />
+
+    </>
 
   )
 }

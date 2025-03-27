@@ -10,6 +10,7 @@ export default function Chairs() {
 
   return (
     <div>
+
       <Header />
 
       <div className="container-fluid chair_sec1">
@@ -118,6 +119,7 @@ export default function Chairs() {
 
 
       <Footer />
+      
     </div>
   )
 }
