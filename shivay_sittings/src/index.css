@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
     box-sizing: border-box;
 }
 
@@ -758,7 +759,8 @@ header {
 
 .sec4 {
     height: 500px;
-    background: url("https://w0.peakpx.com/wallpaper/548/427/HD-wallpaper-modern-design-architecture-house-interior-home-design-sofa.jpg");
+    background: url('/img/4.png');
+    /* background: url("https://w0.peakpx.com/wallpaper/548/427/HD-wallpaper-modern-design-architecture-house-interior-home-design-sofa.jpg"); */
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -2988,7 +2990,6 @@ header {
 
     @media (max-width:768px) {
         .text-content {
-
             width: 100%;
         }
 
@@ -3079,7 +3080,7 @@ header {
     }
 
     .chair-back {
-        background: linear-gradient(135deg, #87f19e, #01421a);
+        background: linear-gradient(135deg, #cb9c56, #d35024);
         color: white;
         font-size: 1.2rem;
         font-weight: bold;
@@ -3097,7 +3098,7 @@ header {
 
     .chair-front img,
     .chair-back img {
-        width: 100%;
+        width: 70%;
         height: 80%;
         object-fit: cover;
         border-bottom: 3px solid #ccc;

@@ -13,6 +13,11 @@ const steps = [
 
 export default function About() {
 
+  //for scroll on next page
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const [activeStep, setActiveStep] = useState(0);
 
   useEffect(() => {

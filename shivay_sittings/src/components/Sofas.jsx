@@ -6,6 +6,11 @@ import { Link } from 'react-router-dom';
 
 export default function Sofas() {
 
+  //for scroll on next page
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   //sec1
 
   const [swap, setSwap] = useState(false);

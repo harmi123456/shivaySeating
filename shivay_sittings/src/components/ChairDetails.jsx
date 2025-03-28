@@ -1,10 +1,16 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { Air_Series, Bar_Series, chairsData, Executive_Series, Premium_Series, relatedProducts, sofasData, visitor_Series } from './chairData';
 import Header from './Header';
 import Footer from './Footer';
 
 export default function ChairDetails() {
+
+  //for scroll on next page
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const { id } = useParams();
   const numericId = Number(id);
 

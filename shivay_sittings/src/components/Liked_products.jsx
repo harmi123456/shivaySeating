@@ -4,6 +4,11 @@ import Footer from './Footer';
 
 export default function Liked_products() {
 
+  //for scroll on next page
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const [likedProducts, setLikedProducts] = useState([]);
 
 

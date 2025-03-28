@@ -1,10 +1,15 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Header from './Header'
 import Footer from './Footer'
 import { chairsData2 } from './chairData'
 import { motion } from "framer-motion";
 
 export default function Chairs() {
+
+  //for scroll on next page
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const [hoveredChair, setHoveredChair] = useState(null);
 

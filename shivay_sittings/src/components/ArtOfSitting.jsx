@@ -38,6 +38,11 @@ const chairs = [
 
 export default function ArtOfSitting() {
 
+  //for scroll on next page
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
@@ -90,17 +95,18 @@ export default function ArtOfSitting() {
       oldImg: "img/oldchair1.png",
       oldText: "Vintage Wooden Classic"
     },
-    {
-      nowImg: "img/modernchair2.png",
-      nowText: "Luxury Recliner",
-      oldImg: "img/oldchair2.png",
-      oldText: "Antique Wooden Chair"
-    },
+   
     {
       nowImg: "img/modernchair3.png",
       nowText: "Minimalist Comfort",
       oldImg: "img/oldchair3.png",
       oldText: "Timeless Heritage Chair"
+    },
+    {
+      nowImg: "img/modernchair2.png",
+      nowText: "Luxury Recliner",
+      oldImg: "img/oldchair2.png",
+      oldText: "Antique Wooden Chair"
     },
     {
       nowImg: "img/modernchair4.png",

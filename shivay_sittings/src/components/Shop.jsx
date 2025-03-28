@@ -6,6 +6,11 @@ import { useNavigate } from 'react-router-dom';
 
 export default function Shop() {
 
+  //for scroll on next page
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   //sec1
   const [activeIndex, setActiveIndex] = useState(1);
 

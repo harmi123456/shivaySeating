@@ -49,6 +49,12 @@ const testimonials = [
 
 export default function Home() {
 
+  //for scroll on next page
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+
   const sliderRef = useRef(null);
 
 

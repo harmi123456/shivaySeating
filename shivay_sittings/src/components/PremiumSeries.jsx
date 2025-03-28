@@ -6,6 +6,11 @@ import { Premium_Series } from './chairData';
 
 export default function PremiumSeries() {
 
+  //for scroll on next page
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   // Initialize liked products from localStorage
   const [likedProducts, setLikedProducts] = useState(() => {
     return JSON.parse(localStorage.getItem("likedProducts")) || [];
