@@ -1,12 +1,33 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import "./footer.css"
 
 export default function Footer() {
+
+    //WhatsApp icons
+    const phoneNumber = "9724140596";
+
+    const openWhatsApp = () => {
+        const url = `https://wa.me/${phoneNumber}`;
+        window.open(url, "_blank");
+    };
+
+    const makeCall = () => {
+        window.location.href = `tel:${phoneNumber}`;
+    };
+
+
+    const [showIcons, setShowIcons] = useState(false);
+
+    const toggleIcons = () => {
+        setShowIcons(!showIcons);
+    };
+
+
     return (
         <div>
 
-            <footer className="footer ">
+            <footer className="footer">
                 <div className="footer-container">
 
                     {/* Left Section - Logo & Socials */}
@@ -58,6 +79,33 @@ export default function Footer() {
                 <div className="footer-bottom">
                     <p>© 2025 – Shivay Seatings</p>
                 </div>
+
+                {/* //whats app */}
+
+                <div className="parent-div">
+
+                    {/* Divs to show/hide */}
+                    {showIcons && (
+
+                        <div className="h-icons">
+                            <div className="hidden-icons" onClick={makeCall}>
+                                <i className="fa fa-phone"></i>
+                            </div>
+                            <div className="hidden-icons" onClick={openWhatsApp}>
+                                <i className="fa-brands fa-whatsapp"></i>
+                            </div>
+                        </div>
+
+                    )}
+
+                    <div className="icon-div" onClick={toggleIcons}>
+                        <i className="fa-brands fa-whatsapp  whatsapp-icon"></i>
+                        <i className="fa fa-phone call-icon"></i>
+                    </div>
+
+                </div>
+
+
             </footer>
 
         </div>

@@ -78,3 +78,96 @@
     padding-top: 10px;
     font-size: 14px;
 }
+
+
+/* //WhatsAPP icons */
+
+.parent-div {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 70px;
+    height: 200px;
+    text-align: center;
+    margin: 0;
+    z-index: 1000;
+  
+    .whatsapp-icon {
+      position: relative;
+      top: 2px;
+      left: 5px;
+      font-size: 22px;
+    }
+  
+    .call-icon {
+      position: relative;
+      top: 2px;
+      left: -10px;
+      rotate: -5deg;
+      font-size: 20px;
+    }
+  
+    .icon-div {
+      position: relative;
+      top: 130px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      cursor: pointer;
+      background-color: #d24b1e;
+      color: white;
+      padding: 15px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+    }
+  
+    .icon-div:hover {
+      background-color: #d24b1e;
+      transform: scale(1.1);
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    }
+  
+    .h-icons {
+      position: absolute;
+      left: 10px;
+      bottom: 80px;
+      flex-direction: column;
+      justify-content: space-evenly;
+      display: flex;
+      gap: 10px;
+    }
+  
+    .hidden-icons {
+      background-color: #d24b1e;
+      color: white;
+      padding: 10px;
+      border-radius: 10px;
+      cursor: pointer;
+      text-align: center;
+      animation: fadeIn 0.3s ease-in-out;
+    }
+  
+    .hidden-icons i {
+      font-size: 20px;
+      color: white;
+    }
+  
+    /* Fade-in animation */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+  
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  
+  }
+  
