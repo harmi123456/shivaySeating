@@ -43,6 +43,8 @@ export default function ArtOfSitting() {
     window.scrollTo(0, 0);
   }, []);
 
+
+  //sec2
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
@@ -60,31 +62,6 @@ export default function ArtOfSitting() {
   }, []);
 
 
-  //sec3
-
-  const images = [
-    "img/art1.jpg",
-    "img/art2.jpg",
-    "img/art3.jpg",
-    "img/art4.jpg",
-  ];
-
-  const [currentImage, setCurrentImage] = useState(0);
-  const [fade, setFade] = useState(true);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setFade(false); // Start fade-out
-      setTimeout(() => {
-        setCurrentImage((prev) => (prev + 1) % images.length);
-        setFade(true); // Start fade-in
-      }, 500); // Wait for fade-out effect before changing image
-    }, 2000);
-
-    return () => clearInterval(interval);
-  }, []);
-
-
   //sec4
   //flip card effect 
 
@@ -95,7 +72,7 @@ export default function ArtOfSitting() {
       oldImg: "img/oldchair1.png",
       oldText: "Vintage Wooden Classic"
     },
-   
+
     {
       nowImg: "img/modernchair3.png",
       nowText: "Minimalist Comfort",
@@ -137,7 +114,7 @@ export default function ArtOfSitting() {
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
             >
-              <Link to='/shop' style={{textDecoration:'none', color:'white'}}>Explore Collection</Link>
+              <Link to='/shop' style={{ textDecoration: 'none', color: 'white' }}>Explore Collection</Link>
             </motion.button>
           </motion.div>
 
@@ -149,7 +126,7 @@ export default function ArtOfSitting() {
 
         <div className={`evolution-section`} style={{ backgroundColor: chairs[currentIndex].bgColor }} >
           <div className={`chair-container show`}>
-            <img src={chairs[currentIndex].image} alt="Chair" />
+            <img src={chairs[currentIndex].image} alt="Chair" /> <br /><br />
             <h2 className="chair-info">{chairs[currentIndex].name}</h2>
           </div>
         </div>
@@ -174,6 +151,46 @@ export default function ArtOfSitting() {
 
       </div>
 
+      <div className="container-fluid chair_sec3">
+        {/* Neck Pain Image with Hover Effect */}
+        <motion.div
+          className="pain_box"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+        >
+          <div className="nack_pain">
+            <img src="/img/neckpain1.jpg" alt="Neck Pain" />
+            <div className="overlay">
+              <h1>Neck Pain Relief Solutions</h1>
+              <p>We design ergonomic office chairs that reduce neck strain and improve posture.</p>
+              <p>Say goodbye to neck pain with our scientifically designed headrests and lumbar support.</p>
+              <p>Enhance your work efficiency with our chairs, built for all-day comfort and support.</p>
+            </div>
+          </div>
+        </motion.div>
+
+        {/* Back Pain Image with Hover Effect */}
+        <motion.div
+          className="pain_box"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+          viewport={{ once: true }}
+        >
+          <div className="back_pain">
+            <img src="/img/backpain4.jpg" alt="Back Pain" />
+            <div className="overlay">
+              <h1>Back Pain Support & Tips</h1>
+              <p>Experience superior comfort with our orthopedic back support chairs.</p>
+              <p>Designed for long hours – our chairs promote spine health and reduce back pain.</p>
+              <p>Ergonomic lumbar support ensures perfect posture, preventing discomfort and fatigue.</p>
+            </div>
+          </div>
+        </motion.div>
+      </div>
+
 
       <div className="art_sec3">
 
@@ -192,14 +209,6 @@ export default function ArtOfSitting() {
             Elevate your space with <b>ergonomic innovation, sophisticated design, and lasting comfort.</b> **Invest in the art of sitting well!**
           </p>
 
-        </div>
-
-        <div className="art_img">
-          <img
-            src={images[currentImage]}
-            alt="Art of Seating"
-            className={fade ? "fade-in" : "fade-out"}
-          />
         </div>
 
       </div>

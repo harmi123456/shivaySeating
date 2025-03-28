@@ -15,9 +15,9 @@ export default function Header() {
         const storedLikes = JSON.parse(localStorage.getItem("likedProducts")) || [];
         setLikedProducts(storedLikes);
     }, []);
-    
+
     const handleLikeClick = (chair) => {
-        navigate("/liked-products"); 
+        navigate("/liked-products");
         const updatedLikes = [...likedProducts, chair];
         setLikedProducts(updatedLikes);
         localStorage.setItem("likedProducts", JSON.stringify(updatedLikes));
@@ -44,7 +44,12 @@ export default function Header() {
                     <span className="close-icon" onClick={() => setMenuOpen(false)}>×</span>
 
                     <Link to='/'>Home</Link>
-                    <Link to='/aboutUs'>About Us</Link>
+                    <Link to='/shop'>Collection</Link>
+                    <Link to='/artOfSitting'>Art Of Sittings</Link>
+
+                    <div className="logo">
+                        <img src="/img/logo3.png" alt="" />
+                    </div>
 
                     {/* Dropdown */}
                     <div className="dropdown">
@@ -62,11 +67,8 @@ export default function Header() {
 
                     </div>
 
-                    <div className="logo">
-                        <img src="/img/logo3.png" alt="" />
-                    </div>
 
-                    <Link to='/artOfSitting'>Art Of Sittings</Link>
+                    <Link to='/aboutUs'>About Us</Link>
                     <Link to='/contactUs'>Contact Us</Link>
 
                 </div>
