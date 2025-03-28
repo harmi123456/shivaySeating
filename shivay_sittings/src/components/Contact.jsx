@@ -20,7 +20,7 @@ export default function Contact() {
           <div className="form-1">
             <h1>Crafting Comfort with <br /> Elegance in Every Chair and Sofa</h1>
             <div className="lamp">
-              <img src="/img/form-lamp.png" alt="" />
+              <img src="/img/form-lamp1.png" alt="" />
             </div>
           </div>
 

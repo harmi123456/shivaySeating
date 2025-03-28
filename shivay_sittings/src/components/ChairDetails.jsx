@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import { Air_Series, Bar_Series, chairsData, Executive_Series, Premium_Series, relatedProducts, sofasData, visitor_Series } from './chairData';
+import { Air_Series, Bar_Series, chairsData, Executive_Series, Premium_Series, relatedProducts, visitor_Series } from './chairData';
 import Header from './Header';
 import Footer from './Footer';
 
@@ -17,7 +17,6 @@ export default function ChairDetails() {
   // Find the item from different categories
   const product =
     chairsData?.find(ch => ch.id === numericId) ||
-    sofasData?.find(so => so.sofa_id === numericId) ||
     Air_Series?.find(ch => ch.id === numericId) ||
     Bar_Series?.find(ch => ch.id === numericId) ||
     Executive_Series?.find(ch => ch.id === numericId) ||

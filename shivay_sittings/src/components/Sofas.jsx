@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import Header from './Header'
 import Footer from './Footer'
-import { sofasData } from './chairData';
-import { Link } from 'react-router-dom';
 
 export default function Sofas() {
 
@@ -11,70 +9,122 @@ export default function Sofas() {
     window.scrollTo(0, 0);
   }, []);
 
-  //sec1
 
-  const [swap, setSwap] = useState(false);
-  const [hover, setHover] = useState(false);
+  //sec2
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setSwap((prev) => !prev);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  const sofas = [
+    { img: "/img/16.jpg", title: "Luxury Recliner Sofa", description: "Comfortable and stylish recliner sofa with premium leather finish." },
+    { img: "/img/sofa9.jpg", title: "Modern Sectional Sofa", description: "Perfect for large living spaces, comes with modular sections." },
+    { img: "/img/4(1).png", title: "Classic Wooden Sofa", description: "Elegant wooden frame with soft cushions for extra comfort." },
+    { img: "/img/sofa10.jpg", title: "Contemporary Fabric Sofa", description: "Soft fabric upholstery with a sleek modern design." },
+  ];
 
 
   return (
     <div>
       <Header />
 
-      <div
-        className={`sofa_sec1 ${swap ? "swap" : ""} ${hover ? "hover" : ""}`}
-        onMouseEnter={() => setHover(true)}
-        onMouseLeave={() => setHover(false)}
-      >
-        <img src="/img/sofa_back.png" alt="sofa" className="floating-item item1" />
-        <img src="/img/chair_back.png" alt="chair" className="floating-item item2" />
-        <img src="/img/sofa2_back.png" alt="sofa" className="floating-item item3" />
-        <img src="/img/chair2_back.png" alt="chair" className="floating-item item4" />
-        <img src="/img/chair3_back.png" alt="chair" className="floating-item item5" />
+      <div className="chair_sec1">
 
-        <img src="/img/sofa3_back.png" alt="sofa" className="floating-item item6" />
-        <img src="/img/chair4_back.png" alt="chair" className="floating-item item7" />
-        <img src="/img/sofa4_back.png" alt="sofa" className="floating-item item8" />
-        <img src="/img/chair5_back.png" alt="chair" className="floating-item item9" />
-        <img src="/img/chair6_back.png" alt="chair" className="floating-item item10" />
+        <section className="hero-section mt-5">
+          <h1 className="hero-title mt-5">Discover The Best Sofa</h1>
+          <p className="hero-subtext">Modern • Comfortable • Elegant</p>
+
+          <div className="glass-cards mb-5">
+
+            <div className="glass-card">
+              <img src="/img/sofa_18.jpg" alt="Luxury Recliner Sofa" />
+              Luxury Recliner Sofa
+            </div>
+
+            <div className="glass-card">
+              <img src="/img/sofa6.jpg" alt="Classic Wooden Sofa" />
+              Modern Leather Sofa
+            </div>
+
+            <div className="glass-card">
+              <img src="/img/sofa_20.jpg" alt="Modern Leather Sofa" />
+              Classic Wooden Sofa
+            </div>
+
+          </div>
+        </section>
 
       </div>
 
-      {/* //sofa section2 */}
 
-      <div className="container-fluid chair_sec2 mt-5 ">
+      <div className="sofa_sec2">
 
-        <h2 className="section-heading">Explore Our Exclusive Sofa Collection</h2>
-
-        <div className="chairs-container mt-5">
-
-          {sofasData.map((sofa) => (
-            <Link to={`/chair/${sofa.sofa_id}`} key={sofa.sofa_id} className="chair-card" >
-
-              <div>
-                <img src={sofa.image} alt={sofa.name} className="chair-image" />
-                <h5 className="chair-name">{sofa.name}</h5>
-                <p className="chair-description">{sofa.description}</p>
-                <div className="icons">
-                  <div className="heart_icon">
-                    <i className="fas fa-heart"></i>
+        <section className="flip-card-section">
+          <h2 className="section-title">Explore Our Sofa Collection</h2>
+          <div className="flip-card-container">
+            {sofas.map((sofa, index) => (
+              <div className="flip-card" key={index}>
+                <div className="flip-card-inner">
+                  <div className="flip-card-front">
+                    <img src={sofa.img} alt={sofa.title} />
                   </div>
-                  <div className="chervon_right">
-                    <i className="fas fa-chevron-right"></i>
+                  <div className="flip-card-back">
+                    <h3>{sofa.title}</h3>
+                    <p>{sofa.description}</p>
                   </div>
                 </div>
               </div>
+            ))}
+          </div>
+        </section>
 
-            </Link>
-          ))}
+      </div>
+
+
+      <div className="sofa_sec3">
+
+        <div class="container-fluid">
+
+          <div class="row">
+
+            <div class="col col-12 col-xl-8 col-md-6 col-sm-12" id="img1"> </div>
+
+            <div class="col col-12 col-xl-4 col-md-6 col-sm-12" id="img2"></div>
+
+            <div class="col col-12 col-xl-3 col-md-6 col-sm-12" id="img3"> </div>
+
+            <div class="col col-12 col-xl-6 col-md-6 col-sm-12" id="img4"></div>
+
+            <div class="col col-12 col-xl-3 col-md-6 col-sm-12" id="img5"></div>
+
+            <div class="col col-12 col-xl-6 col-md-6 col-sm-12" id="img6"></div>
+
+            <div class="col col-12 col-xl-6 col-md-6 col-sm-12" id="img7"></div>
+
+            <div class="col col-12 col-xl-4 col-md-6 col-sm-12" id="img8"></div>
+
+            <div class="col col-12 col-xl-4 col-md-6 col-sm-12" id="img9"></div>
+
+            <div class="col col-12 col-xl-4 col-md-6 col-sm-12" id="img10"></div>
+
+            <div class="col col-12 col-xl-3 col-md-6 col-sm-12" id="img3"></div>
+
+            <div class="col col-12 col-xl-6 col-md-6 col-sm-12" id="img4"></div>
+
+            <div class="col col-12 col-xl-3 col-md-6 col-sm-12" id="img5"></div>
+
+            <div class="col col-12 col-xl-8 col-md-6 col-sm-12" id="img11"></div>
+
+            <div class="col col-12 col-xl-4 col-md-6 col-sm-12" id="img12"></div>
+
+            <div class="col col-12 col-xl-6 col-md-6 col-sm-12" id="img6"></div>
+
+            <div class="col col-12 col-xl-6 col-md-6 col-sm-12" id="img7"></div>
+
+            <div class="col col-12 col-xl-4 col-md-6 col-sm-12" id="img13"></div>
+
+            <div class="col col-12 col-xl-8 col-md-6 col-sm-12" id="img14"></div>
+
+          </div>
+
+
+
         </div>
 
 

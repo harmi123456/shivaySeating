@@ -48,7 +48,7 @@ export default function Shop() {
       <div className="shop_sec1">
 
         <div className="gallery">
-          {["executive3.jpeg", "sofa4.jpg", "corpo_chair1.jpeg", "sofa2.jpg"].map(
+          {["executive3.jpeg", "36.jpg", "corpo_chair1.jpeg", "sofa2.jpg", "sofa_21.jpg"].map(
             (img, index) => (
               <img
                 key={index}

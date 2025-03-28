@@ -120,46 +120,6 @@ export const chairsData2 = [
 ];
 
 
-
-
-//sofa page
-
-export const sofasData = [
-
-  // LATEST PRODUCTS
-  { sofa_id: 51, name: "Modern Leather Sofa", image: "/img/sofa1.jpg", category: "latest", price: "$900", description: "Elegant leather sofa with premium comfort" },
-  { sofa_id: 52, name: "Classic Fabric Sofa", image: "/img/sofa2.jpg", category: "latest", price: "$750", description: "Soft fabric sofa with durable design" },
-  { sofa_id: 53, name: "Luxury Velvet Sofa", image: "/img/sofa3.jpg", category: "latest", price: "$1100", description: "Premium velvet finish with extra cushions" },
-  { sofa_id: 54, name: "Recliner Sofa", image: "/img/sofa4.jpg", category: "latest", price: "$1200", description: "Adjustable recliner sofa for ultimate relaxation" },
-  { sofa_id: 55, name: "Minimalist Corner Sofa", image: "/img/sofa5.jpg", category: "latest", price: "$800", description: "Perfect for modern interiors" },
-  { sofa_id: 56, name: "L-Shaped Sofa", image: "/img/sofa6.jpg", category: "latest", price: "$950", description: "Spacious and comfortable" },
-  { sofa_id: 57, name: "Convertible Sofa Bed", image: "/img/sofa7.jpg", category: "latest", price: "$650", description: "Multi-functional and space-saving" },
-  { sofa_id: 58, name: "Wooden Frame Sofa", image: "/img/sofa8.jpg", category: "latest", price: "$780", description: "Classic wooden design with cozy cushions" },
-
-  // TOP RATED
-  { sofa_id: 59, name: "Luxury Sectional Sofa", image: "/img/sofa9.jpg", category: "topRated", price: "$1400", description: "Best for big living spaces" },
-  { sofa_id: 60, name: "High-Back Sofa", image: "/img/sofa10.jpg", category: "topRated", price: "$850", description: "Elegant design with full back support" },
-  { sofa_id: 61, name: "Chesterfield Sofa", image: "/img/sofa11.jpg", category: "topRated", price: "$1350", description: "Classic button-tufted style" },
-  { sofa_id: 62, name: "Ultra Soft Sofa", image: "/img/sofa12.jpg", category: "topRated", price: "$980", description: "Extra soft foam for comfort" },
-  { sofa_id: 63, name: "Modern Curved Sofa", image: "/img/sofa13.jpg", category: "topRated", price: "$1050", description: "Unique curved design" },
-  { sofa_id: 64, name: "Mid-Century Sofa", image: "/img/sofa14.jpg", category: "topRated", price: "$870", description: "Vintage-inspired aesthetics" },
-  { sofa_id: 65, name: "Smart Recliner Sofa", image: "/img/sofa15.jpg", category: "topRated", price: "$1600", description: "Built-in USB charging and Bluetooth speakers" },
-  { sofa_id: 66, name: "Deep Seating Sofa", image: "/img/sofa16.jpg", category: "topRated", price: "$1250", description: "Extra-deep seats for lounging" },
-
-  // BEST SELLERS
-  { sofa_id: 67, name: "Plush Velvet Sofa", image: "/img/sofa17.jpg", category: "bestSellers", price: "$980", description: "Luxurious comfort with velvet touch" },
-  { sofa_id: 68, name: "Compact Apartment Sofa", image: "/img/sofa18.jpg", category: "bestSellers", price: "$720", description: "Perfect for small spaces" },
-  { sofa_id: 69, name: "Foldable Sofa Bed", image: "/img/sofa19.jpg", category: "bestSellers", price: "$680", description: "Easily converts into a bed" },
-  { sofa_id: 70, name: "Tufted Fabric Sofa", image: "/img/sofa20.jpg", category: "bestSellers", price: "$880", description: "Elegant tufted detailing" },
-  { sofa_id: 71, name: "Outdoor Patio Sofa", image: "/img/sofa21.jpg", category: "bestSellers", price: "$750", description: "Weather-resistant design" },
-  { sofa_id: 72, name: "Modular Sofa Set", image: "/img/sofa22.jpg", category: "bestSellers", price: "$1300", description: "Customizable and spacious" },
-  { sofa_id: 73, name: "Bohemian Floor Sofa", image: "/img/sofa23.jpg", category: "bestSellers", price: "$600", description: "Low-seating comfort" },
-  { sofa_id: 74, name: "Luxury Reclining Sofa", image: "/img/sofa24.jpg", category: "bestSellers", price: "$1700", description: "Ultimate comfort with reclining feature" },
-];
-
-
-
-
 // products.js
 //shop page
 
@@ -179,18 +139,12 @@ export const products = [
   { id: 86, name: "Rocking Chair", image: "/img/chair_10.jpg", category: "chair", price: 170, material: "Wood & Fabric", comfort: "High", rating: 4.6 },
 
   // 🛋 Sofas
-  { id: 87, name: "Modern Sofa", image: "/img/sofa2.jpg", category: "sofa", price: 300, material: "Fabric", comfort: "Very High", rating: 4.8 },
-  { id: 88, name: "Luxury Sofa", image: "/img/sofa4.jpg", category: "sofa", price: 400, material: "Velvet", comfort: "Ultra Soft", rating: 4.9 },
-  { id: 89, name: "Classic Leather Sofa", image: "/img/leather_sofa.jpg", category: "sofa", price: 350, material: "Leather", comfort: "High", rating: 4.7 },
-  { id: 90, name: "Velvet Couch", image: "/img/velvet_couch.jpg", category: "sofa", price: 330, material: "Velvet", comfort: "Very High", rating: 4.6 },
-  { id: 91, name: "Minimalist Sofa", image: "/img/minimalist_sofa.jpg", category: "sofa", price: 280, material: "Fabric", comfort: "Medium", rating: 4.2 },
-  { id: 92, name: "Sectional Sofa", image: "/img/sectional_sofa.jpg", category: "sofa", price: 500, material: "Leather", comfort: "Ultra Soft", rating: 4.9 },
-  { id: 93, name: "Sleeper Sofa", image: "/img/sleeper_sofa.jpg", category: "sofa", price: 450, material: "Fabric & Foam", comfort: "Very High", rating: 4.7 },
-  { id: 94, name: "Loveseat Sofa", image: "/img/loveseat_sofa.jpg", category: "sofa", price: 270, material: "Leather", comfort: "Medium", rating: 4.3 },
-  { id: 95, name: "Chesterfield Sofa", image: "/img/chesterfield_sofa.jpg", category: "sofa", price: 380, material: "Velvet", comfort: "High", rating: 4.5 },
-  { id: 96, name: "Tuxedo Sofa", image: "/img/tuxedo_sofa.jpg", category: "sofa", price: 360, material: "Fabric", comfort: "Medium", rating: 4.2 },
-  { id: 97, name: "Camelback Sofa", image: "/img/camelback_sofa.jpg", category: "sofa", price: 340, material: "Leather", comfort: "High", rating: 4.4 },
-  { id: 98, name: "Daybed Sofa", image: "/img/daybed_sofa.jpg", category: "sofa", price: 320, material: "Fabric", comfort: "Very High", rating: 4.6 }
+  { id: 87, name: "Modern Sofa", image: "/img/sofa_18.jpg", category: "sofa", price: 300, material: "Fabric", comfort: "Very High", rating: 4.8 },
+  { id: 88, name: "Luxury Sofa", image: "/img/sofa5.jpg", category: "sofa", price: 400, material: "Velvet", comfort: "Ultra Soft", rating: 4.9 },
+  { id: 89, name: "Classic Leather Sofa", image: "/img/sofa_20.jpg", category: "sofa", price: 350, material: "Leather", comfort: "High", rating: 4.7 },
+  { id: 90, name: "Velvet Couch", image: "/img/sofa6.jpg", category: "sofa", price: 330, material: "Velvet", comfort: "Very High", rating: 4.6 },
+  { id: 91, name: "Minimalist Sofa", image: "/img/sofa_19.jpg", category: "sofa", price: 280, material: "Fabric", comfort: "Medium", rating: 4.2 },
+  { id: 92, name: "Sectional Sofa", image: "/img/sofa7.jpg", category: "sofa", price: 500, material: "Leather", comfort: "Ultra Soft", rating: 4.9 },
 ];
 
 
