@@ -161,21 +161,22 @@ export const sofasData = [
 
 
 // products.js
+//shop page
 
 export const products = [
   // 🪑 Chairs
-  { id: 75, name: "Executive Chair", image: "/img/executive3.jpeg", category: "chair", price: 150, material: "Leather", comfort: "High", rating: 4.5 },
-  { id: 76, name: "Corporate Chair", image: "/img/corpo_chair1.jpeg", category: "chair", price: 120, material: "Mesh", comfort: "Medium", rating: 4.2 },
-  { id: 77, name: "Ergonomic Chair", image: "/img/ergonomic_chair.jpg", category: "chair", price: 180, material: "Fabric", comfort: "Very High", rating: 4.8 },
-  { id: 78, name: "Recliner Chair", image: "/img/recliner_chair.jpg", category: "chair", price: 250, material: "Leather", comfort: "Ultra Soft", rating: 4.9 },
-  { id: 79, name: "Gaming Chair", image: "/img/gaming_chair.jpg", category: "chair", price: 200, material: "Synthetic Leather", comfort: "High", rating: 4.7 },
-  { id: 80, name: "Wooden Armchair", image: "/img/wooden_armchair.jpg", category: "chair", price: 100, material: "Solid Wood", comfort: "Medium", rating: 4.1 },
-  { id: 81, name: "Swivel Office Chair", image: "/img/swivel_office_chair.jpg", category: "chair", price: 140, material: "Mesh & Plastic", comfort: "High", rating: 4.3 },
-  { id: 82, name: "Mesh Office Chair", image: "/img/mesh_office_chair.jpg", category: "chair", price: 110, material: "Mesh", comfort: "Medium", rating: 4.0 },
-  { id: 83, name: "Bar Stool Chair", image: "/img/bar_stool_chair.jpg", category: "chair", price: 80, material: "Metal & Leather", comfort: "Low", rating: 3.8 },
-  { id: 84, name: "Folding Chair", image: "/img/folding_chair.jpg", category: "chair", price: 60, material: "Plastic", comfort: "Low", rating: 3.5 },
-  { id: 85, name: "Dining Chair", image: "/img/dining_chair.jpg", category: "chair", price: 90, material: "Wood & Cushion", comfort: "Medium", rating: 4.2 },
-  { id: 86, name: "Rocking Chair", image: "/img/rocking_chair.jpg", category: "chair", price: 170, material: "Wood & Fabric", comfort: "High", rating: 4.6 },
+  { id: 75, name: "Executive Chair", image: "/img/chair_63.jpg", category: "chair", price: 150, material: "Leather", comfort: "High", rating: 4.5 },
+  { id: 76, name: "Corporate Chair", image: "/img/chair_55.jpg", category: "chair", price: 120, material: "Mesh", comfort: "Medium", rating: 4.2 },
+  { id: 77, name: "Ergonomic Chair", image: "/img/chair_45.jpg", category: "chair", price: 180, material: "Fabric", comfort: "Very High", rating: 4.8 },
+  { id: 78, name: "Recliner Chair", image: "/img/chair_44.jpg", category: "chair", price: 250, material: "Leather", comfort: "Ultra Soft", rating: 4.9 },
+  { id: 79, name: "Gaming Chair", image: "/img/chair_56.jpg", category: "chair", price: 200, material: "Synthetic Leather", comfort: "High", rating: 4.7 },
+  { id: 80, name: "Wooden Armchair", image: "/img/chair_49.jpg", category: "chair", price: 100, material: "Solid Wood", comfort: "Medium", rating: 4.1 },
+  { id: 81, name: "Swivel Office Chair", image: "/img/chair_60.jpg", category: "chair", price: 140, material: "Mesh & Plastic", comfort: "High", rating: 4.3 },
+  { id: 82, name: "Mesh Office Chair", image: "/img/chair_44.jpg", category: "chair", price: 110, material: "Mesh", comfort: "Medium", rating: 4.0 },
+  { id: 83, name: "Bar Stool Chair", image: "/img/chair_17.jpg", category: "chair", price: 80, material: "Metal & Leather", comfort: "Low", rating: 3.8 },
+  { id: 84, name: "Folding Chair", image: "/img/chair_65.jpg", category: "chair", price: 60, material: "Plastic", comfort: "Low", rating: 3.5 },
+  { id: 85, name: "Dining Chair", image: "/img/chair_9.jpg", category: "chair", price: 90, material: "Wood & Cushion", comfort: "Medium", rating: 4.2 },
+  { id: 86, name: "Rocking Chair", image: "/img/chair_10.jpg", category: "chair", price: 170, material: "Wood & Fabric", comfort: "High", rating: 4.6 },
 
   // 🛋 Sofas
   { id: 87, name: "Modern Sofa", image: "/img/sofa2.jpg", category: "sofa", price: 300, material: "Fabric", comfort: "Very High", rating: 4.8 },

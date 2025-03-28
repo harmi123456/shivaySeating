@@ -2697,6 +2697,7 @@ header {
 
 
 /* //artOfSitting page start */
+
 .art_sec1 {
     height: 500px;
     margin-top: 60px;
@@ -2704,7 +2705,7 @@ header {
 
     .hero {
         height: 100%;
-        background: url('img/art10.jpeg');
+        background: url('/img/art11.jpeg');
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;

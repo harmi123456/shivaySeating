@@ -2,7 +2,10 @@ import React, { useEffect, useState } from 'react'
 import Header from './Header'
 import Footer from './Footer'
 import { motion } from "framer-motion";
+import { Link } from 'react-router-dom';
 
+
+//sec2
 
 const chairs = [
   {
@@ -128,7 +131,7 @@ export default function ArtOfSitting() {
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
             >
-              Explore Collection
+              <Link to='/shop' style={{textDecoration:'none', color:'white'}}>Explore Collection</Link>
             </motion.button>
           </motion.div>
 
