@@ -2592,97 +2592,97 @@ header {
     }
 
     #img1 {
-        background: url("img/sofa_1.jpg");
+        background: url("/img/sofa_1.jpg");
         background-size: cover;
         background-position: center;
         overflow: hidden;
     }
 
     #img2 {
-        background: url("img/sofa_2.jpg");
+        background: url("/img/sofa_2.jpg");
         background-size: cover;
         overflow: hidden;
         /* background-position: center; */
     }
 
     #img3 {
-        background: url('img/sofa_3.jpg');
+        background: url('/img/sofa_3.jpg');
         background-size: cover;
         overflow: hidden;
         background-position: center;
     }
 
     #img4 {
-        background: url('img/sofa_4.jpg');
+        background: url('/img/sofa_4.jpg');
         background-position: center;
         background-size: cover;
         overflow: hidden;
     }
 
     #img5 {
-        background: url('img/sofa_5.jpg');
+        background: url('/img/sofa_5.jpg');
         background-position: center;
         background-size: cover;
         overflow: hidden;
     }
 
     #img6 {
-        background: url('img/sofa_21.jpg');
+        background: url('/img/sofa_21.jpg');
         background-position: center;
         overflow: hidden;
     }
 
     #img7 {
-        background: url('img/sofa_17.jpg');
+        background: url('/img/sofa_17.jpg');
         background-size: cover;
         background-position: center;
         overflow: hidden;
     }
 
     #img8 {
-        background: url('img/sofa_8.jpg');
+        background: url('/img/sofa_8.jpg');
         background-size: cover;
         background-position: center;
         overflow: hidden;
     }
 
     #img9 {
-        background: url('img/sofa_9.jpg');
+        background: url('/img/sofa_9.jpg');
         background-size: cover;
         overflow: hidden;
         background-position: center;
     }
 
     #img10 {
-        background: url('img/sofa_10.jpg');
+        background: url('/img/sofa_10.jpg');
         background-size: cover;
         overflow: hidden;
         background-position: center;
     }
 
     #img11 {
-        background: url('img/sofa_11.jpg');
+        background: url('/img/sofa_11.jpg');
         background-size: cover;
         overflow: hidden;
         background-position: center;
     }
 
     #img12 {
-        background: url('img/sofa_12.jpg');
+        background: url('i/mg/sofa_12.jpg');
         background-size: cover;
         overflow: hidden;
         background-position: center;
     }
 
     #img13 {
-        background: url('img/sofa_13.jpg');
+        background: url('/img/sofa_13.jpg');
         background-size: cover;
         overflow: hidden;
         background-position: center;
     }
 
     #img14 {
-        background: url('img/sofa_15.jpg');
+        background: url('/img/sofa_15.jpg');
         background-size: cover;
         background-position: center;
         overflow: hidden;
