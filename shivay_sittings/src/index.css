@@ -2075,6 +2075,21 @@ header {
 
 }
 
+@media (max-width: 480px) {
+    .chair_sec1{
+        .glass-cards{
+            margin-left: 20px;
+        }
+    }
+}
+
+@media (max-width: 380px) {
+    .chair_sec1{
+        .glass-cards{
+            margin-left: 13px;
+        }
+    }
+}
 
 
 /* Unique Animations */
@@ -2701,7 +2716,7 @@ header {
     }
 
     #img12 {
-        background: url('i/mg/sofa_12.jpg');
+        background: url('/img/sofa_12.jpg');
         background-size: cover;
         overflow: hidden;
         background-position: center;
