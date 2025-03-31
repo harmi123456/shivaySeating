@@ -46,7 +46,7 @@ export default function About() {
           <Link to='/shop'>
             <button className="btn hero-btn">Explore Our Collection</button>
           </Link>
-          
+
         </div>
 
       </div>
@@ -195,10 +195,18 @@ export default function About() {
               <p className="sub-desc">
                 Take a look at how we create top-quality chairs and sofas in our production house.
               </p>
-              <video className="w-100 rounded shadow-lg mt-3" controls>
-                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
+
+              <div className="yt_video">
+                <iframe
+                  className="w-100 rounded shadow-lg"
+                  // style={{ height: "353px" }} 
+                  src="https://www.youtube.com/embed/l-7GrSc5tEg?autoplay=1&loop=1&playlist=l-7GrSc5tEg&mute=1"
+                  title="YouTube video"
+                  allow="autoplay; encrypted-media"
+                  allowFullScreen
+                ></iframe>
+              </div>
+
             </div>
 
             <div className="col-md-6">
@@ -271,7 +279,7 @@ export default function About() {
 
 
       <Footer />
-      
+
     </div>
   )
 }

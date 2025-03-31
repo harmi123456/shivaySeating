@@ -10,22 +10,22 @@ import Footer from './Footer';
 
 const slides = [
   {
-    image: "/img/cafe_chair1.jpeg",
-    date: "26 December 2013",
-    title: "Premium Café Chair – Modern & Stylish",
-    description: "Ergonomically designed café chair with a sleek and comfortable finish. Perfect for coffee shops, restaurants, and home dining spaces. Durable, lightweight, and stylish."
+    "image": "/img/cafe_chair1.jpeg",
+    "date": "26 December 2013",
+    "title": "Premium Café Chair – Modern & Stylish",
+    "description": "Modern café chair with a sleek finish, designed for coffee shops, restaurants, and home dining. Lightweight, durable, and comfortable for daily use."
   },
   {
-    image: "/img/corpo_chair1.jpeg",
-    date: "15 August 2024",
-    title: "Corporate Office Chair – Ergonomic & Executive",
-    description: "High-back corporate office chair with lumbar support and breathable mesh. Ideal for long working hours, ensuring comfort and productivity in office environments."
+    "image": "/img/corpo_chair1.jpeg",
+    "date": "15 August 2024",
+    "title": "Corporate Office Chair – Ergonomic & Executive",
+    "description": "Ergonomic office chair with lumbar support, breathable mesh, and executive design. Ensures comfort, productivity, and style in corporate setups."
   },
   {
-    image: "/img/executive3.jpeg",
-    date: "10 March 2023",
-    title: "Luxury Executive Chair – Leather & Adjustable",
-    description: "Premium executive chair crafted with high-quality leather, 360° swivel, and height-adjustable features. A perfect blend of style and comfort for business professionals."
+    "image": "/img/executive3.jpeg",
+    "date": "10 March 2023",
+    "title": "Luxury Executive Chair – Leather & Adjustable",
+    "description": "Premium leather chair with a high back, 360° swivel, and adjustable height. A stylish, comfortable choice for professionals and executives."
   }
 ];
 
@@ -187,7 +187,7 @@ export default function Home() {
       {/* //header */}
       <Header />
 
-      <div className="container-fluid sec1">
+      <div className="sec1">
 
         <div className="slider-container">
           {/* Image Container */}
@@ -289,7 +289,7 @@ export default function Home() {
 
       {/* //sec9 */}
 
-      <div className="conatiner-fluid sec9">
+      <div className="sec9">
         <Link to='/AirSeries' className="chair_rounded">
           <div>
             <img src="img/chair_46.jpg" alt="AirSeries" style={{ width: '250px' }} />

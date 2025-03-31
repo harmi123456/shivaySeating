@@ -219,6 +219,7 @@ header {
 
 .sec1 {
     height: 500px;
+    width: 100%;
     margin-top: 60px;
     display: flex;
     align-items: center;
@@ -489,6 +490,8 @@ header {
 .sec9 {
     height: 400px;
     padding: 40px;
+    width: 100%;
+    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -1646,6 +1649,10 @@ header {
         color: #555;
     }
 
+    .yt_video iframe{
+        height: 353px;
+    }
+
     .info-box {
         background: white;
         border-radius: 8px;
@@ -1750,6 +1757,32 @@ header {
 
 }
 
+
+@media (max-width: 556px) {
+    .about_sec4{
+        .yt_video iframe{
+            height: 179px;
+        }
+    }
+}
+
+
+@media (max-width: 480px) {
+    .about_sec4{
+        .yt_video iframe{
+            height: 230px;
+        }
+    }
+}
+
+
+@media (max-width: 380px) {
+    .about_sec4{
+        .yt_video iframe{
+            height: 179px;
+        }
+    }
+}
 
 
 
@@ -2687,7 +2720,7 @@ header {
         background-position: center;
         overflow: hidden;
     }
-    
+
 }
 
 
@@ -3242,6 +3275,16 @@ header {
         border: none;
         overflow: hidden;
         padding: 10px;
+
+        .lamp {
+            width: 20%;
+        }
+
+        .lamp img {
+            height: 250px;
+            left: -70px;
+        }
+
     }
 
     .contact-us-form .form-container {
@@ -3256,10 +3299,6 @@ header {
         position: relative;
         left: 0px;
         overflow: hidden;
-    }
-
-    .lamp {
-        width: 20%;
     }
 
     .contact-us-form h1 {

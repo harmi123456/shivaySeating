@@ -36,8 +36,8 @@ export default function Footer() {
                         <p>Sophisticated simplicity for the independent mind.</p>
                         <div className="social-icons">
                             <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><i className="fab fa-twitter"></i></a>
-                            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram"></i></a>
-                            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><i className="fab fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/shivay_seating?igsh=MW50YTg2cmlwc2hiZA==" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram"></i></a>
+                            <a href="https://www.facebook.com/share/1DC8isxESz/" target="_blank" rel="noopener noreferrer"><i className="fab fa-facebook"></i></a>
                             <a href="https://youtube.com" target="_blank" rel="noopener noreferrer"><i className="fab fa-youtube"></i></a>
                         </div>
                     </div>
